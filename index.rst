@@ -22,6 +22,7 @@ Depuis la rentrée 2009, l'**algorithmique** prend une place importante dans les
 
    installation.rst
    premiere_utilisation.rst
+   suivre_ce_tuto.rst
    bases.rst
    fonctions.rst
    tests.rst

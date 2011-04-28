@@ -5,7 +5,9 @@
 ********************
 Première utilisation
 ********************
-   
+
+.. _interpreteur:
+
 L’interpréteur
 ==============
 
@@ -40,6 +42,8 @@ Bon, mettre un commentaire dans l’interpréteur n’a pas beaucoup d’intér�
 
 .. image:: /images/pyscripter-interpreteur1.png
     :align: center
+
+.. _editeur:
 
 L’éditeur
 =========
