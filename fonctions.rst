@@ -29,7 +29,11 @@ Pour la définir en Python :
     >>> f(5)
     11
 
-C'est intéressant pour au moins deux raisons:
+.. attention::
+   
+    Vous avez remarqué qu'à la deuxième ligne, on n'a pas commencé à écrire au début de la ligne. On dit qu'on fait une indentation. Et cette indentation est indispensable pour que Python fasse son travail. En règle générale, le bloc d’instructions (une ou plusieurs lignes) qui dépend d’une ligne (devant elle se terminer par :) doit être indenté. C’est obligatoire et en plus cela a l’avantage de rendre le script plus lisible. Vous avez dû remarquer qu'à cette occasion, le prompt :samp:`...` remplace le :samp:`>>>` .
+
+Le principe de définition de fonctions est intéressant pour au moins deux raisons:
 
  - cela nous permet de ne pas répéter un calcul long à taper,
  - car Python possède un type spécial dédié au fonctions, que l'on peut donc manipuler,
