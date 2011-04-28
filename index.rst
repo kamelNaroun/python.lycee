@@ -33,4 +33,8 @@ Depuis la rentrée 2009, l'**algorithmique** prend une place importante dans les
    annexes.rst
    remerciements.rst
 
+.. image:: http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png
+	:alt: Contrat Creative Commons
+	:target: http://creativecommons.org/licenses/by-nc-sa/3.0/
 
+Débuter avec Python au lycée de Kamel Naroun est mis à disposition selon les termes de la licence Creative Commons Paternité - Pas d'Utilisation Commerciale - Partage des Conditions Initiales à l'Identique 3.0 Unported
