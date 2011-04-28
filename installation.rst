@@ -10,7 +10,7 @@ De quoi a-t-on besoin ?
     - D’une version de Python_. Il en existe plusieurs. Les plus récentes sont Python2.6 et Python3.1.
     - Et au minimum, d’un éditeur de texte.
 
-Mais pour débuter, le plus simple est d’utiliser une environnement de développement intégré :
+Mais pour débuter, le plus simple est d’utiliser un environnement de développement intégré :
 
 Sous linux
 ==========
