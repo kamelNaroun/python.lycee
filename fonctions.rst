@@ -9,7 +9,7 @@ Fonctions
 Les fonctions comme on les connaît au lycée
 *******************************************
 
-On peut définir une fonction d'une variable . Considérons par exemple la fonction affine :math:`f` suivante définie sur **R** par:
+On peut définir une fonction d'une variable. Considérons par exemple la fonction affine :math:`f` suivante définie sur **R** par:
 
 .. math::
 

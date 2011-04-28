@@ -9,7 +9,7 @@ Première utilisation
 L’interpréteur
 ==============
 
-L’esprit d’utilisation est un peu le même que celui d’une calculatrice. Le triple chevron >>> est l’invite de Python (prompt en anglais), ce qui signifie que Python attend une commande.
+L’esprit d’utilisation est un peu le même que celui d’une calculatrice. Le triple chevron ``>>>`` est l’invite de Python (*prompt* en anglais), ce qui signifie que Python attend une commande.
 
 .. sourcecode:: python
 
@@ -18,7 +18,7 @@ L’esprit d’utilisation est un peu le même que celui d’une calculatrice. L
 
 On remarque au passage que la priorité des opérations est bien respectée.
 
-Ce symbole est remplacé par ... si on tape un bloc d’instructions.
+Ce symbole est remplacé par ``...`` si on tape un bloc d’instructions.
 
 
 .. sourcecode:: python
@@ -30,7 +30,7 @@ Ce symbole est remplacé par ... si on tape un bloc d’instructions.
    15
    21
 
-Pour écrire des commentaires, il faut commencer par le caractère #.
+Pour écrire des commentaires, il faut commencer par le caractère ``#``.
 
 .. sourcecode:: python
 
