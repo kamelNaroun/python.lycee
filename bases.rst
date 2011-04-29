@@ -86,18 +86,18 @@ Il faut bien faire attention à ne pas confondre l’égalité mathématique `C 
 Chaîne de caractères
 ====================
 
-Pour afficher une chaîne de caractères, il faut utiliser la commande print.
+Pour afficher une chaîne de caractères, il faut utiliser la commande ``print``.
 
 .. attention::
 
-    Depuis la version 3 de Python, la commande print est considérée comme une fonction dont il faut alors mettre les arguments entre parenthèses.
+    Depuis la version 3 de Python, la commande ``print`` est considérée comme une fonction dont il faut alors mettre les arguments entre parenthèses.
 
 .. sourcecode:: python
 
    >>> print("bonjour monde")
    bonjour monde
 
-On peut aussi affecter à une variable une chaîne de caractères. Il faut juste faire attention que *print(a)* et *print("a")* n’auront pas le même effet, comme le montre l’exemple suivant :
+On peut aussi affecter à une variable une chaîne de caractères. Il faut juste faire attention que ``print(a)`` et ``print("a")`` n’auront pas le même effet, comme le montre l’exemple suivant :
 
 .. sourcecode:: python
 
@@ -120,10 +120,10 @@ Puis un exemple un peu plus complexe utilisant la commande print.
 .. sourcecode:: python
 
    >>> a=9
-   >>> print("le carré de ",a," est ",a**2)
+   >>> print("le carré de ", a, " est ", a**2)
    le carré de 9 est 81
 
-On peut aussi utiliser (mais pour une première lecture, il vaut mieux s’arrêter là) les possibilités de formatage de la fonction print comme ci-dessous.
+On peut aussi utiliser (mais pour une première lecture, il vaut mieux s’arrêter là) les possibilités de formatage de la fonction ``print`` comme ci-dessous.
 
 .. sourcecode:: python
 
