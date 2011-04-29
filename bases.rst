@@ -65,7 +65,8 @@ La ligne 1 ne donne aucun affichage. Si la variable a n’existait pas, alors el
    >>> var==49.3
    False
 
-On remarque au passage que taper juste :samp:`var` a le même effet que :samp:`print(var)`.
+On remarque au passage que, dans l’interpréteur interactif, taper juste :samp:`var` a le même effet que :samp:`print(var)`.
+Ce n’est pas le cas dans l’éditeur où l’on a besoin de l’instruction ``print`` pour afficher une variable.
 
 Un dernier exemple :
 
@@ -115,7 +116,8 @@ Pas le même effet, en fait sauf dans un cas particulier comme celui-ci :
    >>> print(a)
    a
 
-Puis un exemple un peu plus complexe utilisant la commande print.
+Puis un exemple un peu plus complexe utilisant la commande ``print``,
+qui sait gérer différent types de paramètres pour les afficher sur une même ligne si on les sépare avec des virgules.
 
 .. sourcecode:: python
 
