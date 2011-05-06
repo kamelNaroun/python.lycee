@@ -83,8 +83,8 @@ Il faut bien faire attention à ne pas confondre l’égalité mathématique `C 
     C_{\rm{nouveau}}=C_{\rm{ancien}}+1
 
 
-Chaîne de caractères
-====================
+Chaînes de caractères
+=====================
 
 Pour afficher une chaîne de caractères, il faut utiliser la commande ``print``.
 
