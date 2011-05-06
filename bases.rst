@@ -135,6 +135,8 @@ On peut aussi utiliser (mais pour une première lecture, il vaut mieux s’arrê
 
 Pour plus d’informations sur ce formatage, voir en annexe.
 
+Notez finalement que la chaîne de caractères vide s’écrit ``""`` ou ``''``.
+
 Listes
 ======
 
@@ -207,4 +209,4 @@ départ est automatiquement 0.
    >>> x
    [0,1,2,3,4]
 
-
+Notez finalement que la liste vide s’écrit ``[]``.
