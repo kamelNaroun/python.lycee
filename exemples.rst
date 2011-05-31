@@ -52,8 +52,8 @@ On peut ne pas trouver très beau les espaces après et avant les parenthèses, 
 
     x = 2
     while x < 3.1:
-        print("g(%0.1f) = %0.2f" %(x,g(x)))
-        x = x+0.1
+        print("g(%0.1f) = %0.2f" %(x, g(x)))
+        x = x + 0.1
 
 Et on obtient : 
 
@@ -75,10 +75,10 @@ Evidemment dans les deux cas, le signe = est affiché, mais il s'agit bien enten
 
 .. sourcecode:: python
 
-    >>> round(12.456,1)   # arrondi de 12.456 au dixième
+    >>> round(12.456, 1)   # arrondi de 12.456 au dixième
     12.5
     >>> a = 8.743159
-    >>> round(a,2)        # arrondi de a au centième
+    >>> round(a, 2)        # arrondi de a au centième
     8.74
     >>> round(a)          # arrondi à l'unité
     9
@@ -93,7 +93,7 @@ On peut demander d'écrire un programme qui permet de déterminer l'intervalle d
     # -*- coding:utf-8 -*-
 
     # une liste
-    E = [0.674,0.679,0.681,0.692,0.705,0.711,0.718,0.718,0.732,0.760]
+    E = [0.674, 0.679, 0.681, 0.692, 0.705, 0.711, 0.718, 0.718, 0.732, 0.760]
 
     # le centre de l'intervalle
     p = 0.7
@@ -151,7 +151,7 @@ On lance un dé. Si le numéro est 1, 5 ou 6, alors c'est gagné, sinon c'est pe
 
     from random import randint
 
-    d = randint(1,6)
+    d = randint(1, 6)
     print(d)
 
     if d == 1:
@@ -173,7 +173,7 @@ En utilisant elif, on peut simplifier le script comme ceci :
 
     from random import randint
 
-    d = randint(1,6)
+    d = randint(1, 6)
     print(d)
 
     if d == 1:
@@ -193,7 +193,7 @@ Et maintenant en utilisant une liste, on peut faire encore plus simple :
 
     from random import randint
 
-    d = randint(1,6)
+    d = randint(1, 6)
     print(d)
 
     if d in [1, 5, 6]:

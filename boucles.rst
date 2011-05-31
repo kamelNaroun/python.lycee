@@ -16,7 +16,7 @@ Le principe de la boucle :samp:`while`, c'est d'exécuter un bloc d'instructions
     >>> i = 1
     >>> while i <= 5:
     ...     print(i)
-    ...     i=i+1
+    ...     i = i + 1
     ...
     1
     2
@@ -55,7 +55,7 @@ Bon, arrêtons là le blabla et regardons un exemple plus mathématique. Si on v
 
 .. sourcecode:: python
 
-    >>> for i in range(1,8):	# pour i allant de 1 à 7
+    >>> for i in range(1, 8):	# pour i allant de 1 à 7
     ...     print(i**2)
     ...
     1
@@ -81,7 +81,7 @@ que l'on note aussi
 .. sourcecode:: python
 
     >>> S = 0
-    >>> for i in range(1,31):   # pour i allant de 1 à 30
+    >>> for i in range(1, 31):   # pour i allant de 1 à 30
     ...     S = S + i
     ... print(S)
     ... 

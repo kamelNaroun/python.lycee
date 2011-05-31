@@ -72,7 +72,7 @@ Un dernier exemple :
 .. sourcecode:: python
 
    >>> C = 3.8
-   >>> C = C+1
+   >>> C = C + 1
    >>> print(C)
    4.8
 
