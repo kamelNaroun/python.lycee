@@ -82,7 +82,7 @@ Ajouter du texte à du texte ou modifier par ajout
     'Blabla bli bloubloublou. Merci.'
     >>> montexte
     'Blabla bli bloubloublou.'
-    >>> montexte  = montexte + " Merci."
+    >>> montexte = montexte + " Merci."
     >>> montexte
     'Blabla bli bloubloublou. Merci.'
     >>> montexte += " Beaucoup."

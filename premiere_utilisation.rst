@@ -13,7 +13,7 @@ L'interpréteur, on le reconnait facilement. C'est lui qui contient le triple ch
 
 .. sourcecode:: python
 
-   >>> 2+3*5
+   >>> 2 + 3 * 5
    17
 
 On remarque au passage que la priorité des opérations est bien respectée.
@@ -36,7 +36,7 @@ On peut y écrire des scripts, c’est-à-dire des programmes petits ou grands. 
 
 .. sourcecode:: python
 
-   print(4.6/2)
+   print(4.6 / 2)
 
 Ce tout petit script permet l'affichage du quotient de 4,6 par 2.
 

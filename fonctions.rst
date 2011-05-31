@@ -20,7 +20,7 @@ Pour la définir en Python :
 .. sourcecode:: python
 
     >>> def f(x):
-    ...     return 2*x+1
+    ...     return 2 * x + 1
     ...
     >>> # on peut maintenant l'utiliser
     >>> f(0)
@@ -93,18 +93,18 @@ Pour enfoncer le clou sur la différence entre une fonction qui retourne quelque
 
 .. sourcecode:: python
 
-	>>> def f(x): return 2*x
+	>>> def f(x): return 2 * x
 	...
-	>>> def g(x): print(2*x)
+	>>> def g(x): print(2 * x)
 	...
 	>>> f(3)
 	6
 	>>> g(3)
 	6
 	>>> # MAIS
-	>>> f(3)==6
+	>>> f(3) == 6
 	True
-	>>> g(3)==6
+	>>> g(3) == 6
 	6
 	False
 
