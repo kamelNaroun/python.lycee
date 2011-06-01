@@ -2,6 +2,8 @@
     :description: installation de Python pour le lycée
     :keywords: python, algorithmique, programmation, langage, lycée, installation, pyscripter, gedit
 
+.. _installation:
+
 ************
 Installation
 ************
