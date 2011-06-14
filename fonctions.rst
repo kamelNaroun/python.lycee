@@ -31,7 +31,7 @@ Pour la définir en Python :
 
 .. attention::
    
-    Vous avez remarqué qu'à la deuxième ligne, on n'a pas commencé à écrire au début de la ligne. On dit qu'on fait une indentation. Et cette indentation est indispensable pour que Python fasse son travail. En règle générale, le bloc d’instructions (une ou plusieurs lignes) qui dépend d’une ligne (devant elle se terminer par :) doit être indenté. C’est obligatoire et en plus cela a l’avantage de rendre le script plus lisible. Vous avez dû remarquer qu'à cette occasion, le prompt :samp:`...` remplace le :samp:`>>>` .
+    Vous avez remarqué qu'à la deuxième ligne, on n'a pas commencé à écrire au début de la ligne. On dit qu'on fait une indentation. Et cette indentation est indispensable pour que Python fasse son travail. En règle générale, le bloc d’instructions (une ou plusieurs lignes) qui dépend d’une ligne (devant elle se terminer par :) doit être indenté. C’est obligatoire et en plus cela a l’avantage de rendre le script plus lisible. Vous avez dû remarquer qu'à cette occasion, le prompt ``...`` remplace le ``>>>`` .
 
 Le principe de définition de fonctions est intéressant pour au moins deux raisons:
 

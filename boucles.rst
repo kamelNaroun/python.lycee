@@ -3,13 +3,13 @@
     :keywords: python, algorithmique, programmation, langage, lycée, boucles, while, for, tant que, pour
 
 ***************************************************
-Boucles (instructions :samp:`while` et :samp:`for`)
+Boucles (instructions ``while`` et ``for``)
 ***************************************************
 
 Tant que
 ========
 
-Le principe de la boucle :samp:`while`, c'est d'exécuter un bloc d'instructions tant que (while in english) une condition donnée est vraie. Encore une fois commençons par un exemple :
+Le principe de la boucle ``while``, c'est d'exécuter un bloc d'instructions tant que (while in english) une condition donnée est vraie. Encore une fois commençons par un exemple :
 
 .. sourcecode:: python
 
@@ -30,13 +30,13 @@ Ici tant que (while) la condition :math:`(i\leq5)` est vraie, le bloc d'instruct
 
     La deuxième instruction est primordiale car elle assure que l'on va sortir de la boucle. En effet, avec ce genre de boucle, il faut faire attention à ne pas construire une **boucle sans fin**.
 
-Pour savoir combien de fois la boucle :samp:`while` est executée, il peut être utile d'utiliser une variable qui servira de compteur, c'est-à-dire une variable initialisée à zéro et incrémentée de 1 dans le bloc d'instructions.
+Pour savoir combien de fois la boucle ``while`` est executée, il peut être utile d'utiliser une variable qui servira de compteur, c'est-à-dire une variable initialisée à zéro et incrémentée de 1 dans le bloc d'instructions.
 
 
 Pour
 ====
 
-Lorsque l'on souhaite répéter un nombre **donné** de fois la même instruction ou le même bloc d'instructions, la commande :samp:`for` est la plus appropriée.
+Lorsque l'on souhaite répéter un nombre **donné** de fois la même instruction ou le même bloc d'instructions, la commande ``for`` est la plus appropriée.
 
 Admettons que l'on veuille afficher 5 fois le mot *blabla*. Voici ce que l'on peut faire.
 
