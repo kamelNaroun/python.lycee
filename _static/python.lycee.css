@@ -40,15 +40,13 @@
 #access {
     background: #137CA9;
     display: block;
-    float: left;
     margin: 0 auto;
-    width: 940px;
+    height: 38px;
 }
 #access .menu-header,
 div.menu {
     font-size: 13px;
     margin-left: 12px;
-    width: 928px;
 }
 #access .menu-header ul,
 div.menu ul {
