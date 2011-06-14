@@ -1,6 +1,8 @@
 {% extends "basic/layout.html" %}
 
 {% block header %}
+<div id="wrapper"> <!-- closed in the footer -->
+<div class="document">
 <!--  from the twentyten WP theme -->
 <div id="branding" role="banner">
     <h1 id="site-title">
@@ -20,6 +22,7 @@
         </ul>
     </div>
 </div><!-- #access -->
+</div>
 {% endblock %}
 
 {%- block footer %}
@@ -36,4 +39,5 @@
       {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
     {%- endif %}
     </div>
+</div> <!-- opened in the header -->
 {%- endblock %}
