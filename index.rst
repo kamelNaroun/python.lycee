@@ -17,11 +17,6 @@ Depuis la rentrée 2009, l'**algorithmique** prend une place importante dans les
 
     Si vous préférez une version pdf, :download:`c'est ici </archives/python-lycee.pdf>`.
 
-.. sidebar:: Le blog
-
-	Pour y accéder, suivre `ce lien`_.
-
-
 .. toctree::
    :maxdepth: 2
 
