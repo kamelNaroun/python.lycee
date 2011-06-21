@@ -117,7 +117,7 @@ Pas le même effet, en fait sauf dans un cas particulier comme celui-ci :
    a
 
 Puis un exemple un peu plus complexe utilisant la commande ``print``,
-qui sait gérer différent types de paramètres pour les afficher sur une même ligne si on les sépare avec des virgules.
+qui sait gérer différents types de paramètres pour les afficher sur une même ligne si on les sépare avec des virgules.
 
 .. sourcecode:: python
 
@@ -140,7 +140,7 @@ Notez finalement que la chaîne de caractères vide s’écrit ``""`` ou ``''``.
 Listes
 ======
 
-C’est une structure qui peut être très utile. Une liste peut contenir des données de type différents. Dans le cadre de ce cours, nous nous limiterons aux listes de nombres. En Python, une liste se note entre crochets avec la virgule comme séparateur.
+C’est une structure qui peut être très utile. Une liste peut contenir des données de types différents. Dans le cadre de ce cours, nous nous limiterons aux listes de nombres. En Python, une liste se note entre crochets avec la virgule comme séparateur.
 
 .. sourcecode:: python
 
