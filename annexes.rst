@@ -33,11 +33,11 @@ Il faut savoir que python n'est pas un logiciel de calcul formel, en tous cas pa
 .. sourcecode:: python
 
     >>> from math import sqrt
-    >>> a=sqrt(2)
-    >>> b=sqrt(3)
-    >>> c=sqrt(5)
+    >>> a = sqrt(2)
+    >>> b = sqrt(3)
+    >>> c = sqrt(5)
     >>> # testons maintenant une égalité
-    >>> a**2+b**2==c**2
+    >>> a**2 + b**2 == c**2
     False
 
 Le résultat n'est pas celui attendu. En effet, on a bien

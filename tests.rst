@@ -11,9 +11,9 @@ Commençons par regarder le script ci-dessous :
 .. sourcecode:: python
 
     print("Entrer un nombre plus petit que 100.")
-    nb=input()
+    nb = input()
     
-    if nb<100:
+    if nb < 100:
         print("Ce nombre convient.")
     else:
         print("Ce nombre est trop grand.")
@@ -22,8 +22,8 @@ A l'execution du script, l'ordinateur va afficher la chaîne "Entrer un nombre p
 
 Puis le test comence :
 
-    - si (IF en anglais) la condition (``nb<100``) est vraie, alors le bloc d'instructions qui suit (ici une seule instruction) est executé,
-    - sinon (ELSE en anglais), c'est-à-dire si la condition (``nb<100``) est fausse, alors c'est l'autre bloc d'instructions qui est executé.
+    - si (IF en anglais) la condition (``nb < 100``) est vraie, alors le bloc d'instructions qui suit (ici une seule instruction) est executé,
+    - sinon (ELSE en anglais), c'est-à-dire si la condition (``nb < 100``) est fausse, alors c'est l'autre bloc d'instructions qui est executé.
 
 .. note::
 
@@ -35,14 +35,14 @@ Puis le test comence :
 	
 	.. sourcecode:: python
 	
-		chaine=input()
-		nb=float(chaine)
+		chaine = input()
+		nb = float(chaine)
 	
 	ou bien directement
 	
 	.. sourcecode:: python
 	
-		nb=float(input())
+		nb = float(input())
 
 
 Exemple
@@ -55,11 +55,11 @@ On peut écrire un petit programme qui nous dit si l'on peut construire un trian
     # -*- coding:utf-8 -*-
 
     print("Entrer la liste de trois longueurs souhaitées")
-    tri=input()
+    tri = input()
 
     tri.sort()      # ordonner les trois longueurs
 
-    if tri[2]<=tri[0]+tri[1]:
+    if tri[2] <= tri[0] + tri[1]:
         print("on peut construire le triangle")
     else:      
         print("on ne peut pas construire un tel triangle")

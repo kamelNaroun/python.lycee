@@ -59,15 +59,13 @@ En anglais "random" signifie "le hasard". Ce module va nous permettre d'utiliser
     0.34461947461259612
     >>> random()
     0.024762749258158245
-    >>> L=[7,3,8,5,6]
+    >>> L = [7, 3, 8, 5, 6]
     >>> choice(L)
     5
     >>> choice(L)
     3
     >>> # cela marche pour une liste de chaine de caractères
-    >>> liste=['Pierre','Paul', 'Jacques']
+    >>> liste = ['Pierre', 'Paul', 'Jacques']
     >>> choice(liste)
     'Jacques'
-
-
 
