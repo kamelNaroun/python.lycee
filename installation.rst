@@ -2,12 +2,14 @@
     :description: installation de Python pour le lycée
     :keywords: python, algorithmique, programmation, langage, lycée, installation, pyscripter, gedit
 
+.. _installation:
+
 ************
 Installation
 ************
 
 De quoi a-t-on besoin ?
-    - D’une version de Python_. Il en existe plusieurs. Les plus récentes sont Python2.6 et Python3.1.
+    - D’une version de Python_. Il en existe plusieurs. Attention, les anciennes versions en 2.x sont incompatibles avec les plus récentes en 3.x.
     - Et au minimum, d’un éditeur de texte.
 
 Mais pour débuter, le plus simple est d’utiliser un environnement de développement intégré :
@@ -21,7 +23,7 @@ Cela peut être Gedit_ avec un greffon Python, ou bien DrPython_ (disponible aus
 Sous windows
 ============
 
-Cela peut être Pyscripter_. Mais inutile de télécharger ce dernier séparément puisqu'il est inclus dans le pack `Portable Python`_ qui comprend en plus le programme Python. L’installatation de ce pack est **très simple** et comprend au choix la version 3.1 de Python ou la 2.6.
+Cela peut être Pyscripter_. Mais inutile de télécharger ce dernier séparément puisqu'il est inclus dans le pack `Portable Python`_. L’installatation de ce pack est **très simple** et comprend une version récente de Python ou des versions plus anciennes (2.x). Pour télécharger Portable Python, allez sur `cette page de téléchargement`_ puis une fois la version choisie, suivez un des liens HTTP ou FTP.
 
 Une fois cette installation faite, il suffit d'ouvrir Pyscripter et alors Python est prêt à l'emploi.
 
@@ -37,4 +39,5 @@ Une fois cette installation faite, il suffit d'ouvrir Pyscripter et alors Python
 .. _Gedit: http://projects.gnome.org/gedit/
 .. _Pyscripter: http://code.google.com/p/pyscripter/
 .. _`Portable Python`: http://www.portablepython.com/
+.. _`cette page de téléchargement`: http://portablepython.com/wiki/Download
 .. _DrPython: http://drpython.sourceforge.net/

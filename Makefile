@@ -38,6 +38,11 @@ clean:
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	sed -i -e 's/Enter search terms or a module, class or function name./Entrez le ou les mots cherchés./' $(BUILDDIR)/html/*.html
+	sed -i -e 's/From here you can search these documents. Enter your search/Depuis cette page, vous pouvez faire une recherche dans ces documents./' $(BUILDDIR)/html/*.html
+	sed -i -e 's/words into the box below and click "search". Note that the search/Entrez les mots recherchés dans la case ci-dessous et cliquez sur "rechercher"./' $(BUILDDIR)/html/*.html
+	sed -i -e "s/function will automatically search for all of the words. Pages/Notez que tous les mots seront recherchés. Les pages/" $(BUILDDIR)/html/*.html
+	sed -i -e "s/containing fewer words won't appear in the result list./contenant moins de mots n'apparaîtront pas dans les résultats./" $(BUILDDIR)/html/*.html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 

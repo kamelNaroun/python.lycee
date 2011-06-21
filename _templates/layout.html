@@ -1,0 +1,47 @@
+{% extends "basic/layout.html" %}
+
+{% block header %}
+<div id="wrapper"> <!-- closed in the footer -->
+<div class="document">
+<!--  from the twentyten WP theme -->
+<div id="branding" role="banner">
+    <h1 id="site-title">
+        <span>
+            <a href="http://python.lycee.free.fr/" title="Débuter avec Python au lycée" rel="home">Débuter avec Python au lycée</a>
+        </span>
+    </h1>
+    <div id="site-description"></div>
+    <img src="" height="0" alt="" />
+</div><!-- #branding -->
+<div id="access" role="navigation">
+    <div class="menu-header">
+        <ul id="menu-menu-1" class="menu">
+            <li id="menu-item-65" class="menu-item menu-item-type-custom menu-item-65"><a href="http://python.lycee.free.fr">Le tutoriel</a></li>
+            <li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-home menu-item-66"><a href="http://python.lycee.free.fr/blog">Le blog</a></li>
+            <li id="menu-item-63" class="menu-item menu-item-type-taxonomy menu-item-63"><a href="http://python.lycee.free.fr/blog/?cat=4">Du nouveau sur le site</a></li>
+        </ul>
+    </div>
+</div><!-- #access -->
+</div>
+{% endblock %}
+
+{# put the sidebar before the body #}
+{% block sidebar1 %}{{ sidebar() }}{% endblock %}
+{% block sidebar2 %}{% endblock %}
+
+{%- block footer %}
+    <div class="footer">
+    {%- if hasdoc('copyright') %}
+      {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+    {%- else %}
+      {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+    {%- endif %}
+    {%- if last_updated %}
+      {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+    {%- endif %}
+    {%- if show_sphinx %}
+      {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
+    {%- endif %}
+    </div>
+</div> <!-- opened in the header -->
+{%- endblock %}

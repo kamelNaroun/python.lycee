@@ -20,7 +20,7 @@ Pour la définir en Python :
 .. sourcecode:: python
 
     >>> def f(x):
-    ...     return 2*x+1
+    ...     return 2 * x + 1
     ...
     >>> # on peut maintenant l'utiliser
     >>> f(0)
@@ -31,7 +31,7 @@ Pour la définir en Python :
 
 .. attention::
    
-    Vous avez remarqué qu'à la deuxième ligne, on n'a pas commencé à écrire au début de la ligne. On dit qu'on fait une indentation. Et cette indentation est indispensable pour que Python fasse son travail. En règle générale, le bloc d’instructions (une ou plusieurs lignes) qui dépend d’une ligne (devant elle se terminer par :) doit être indenté. C’est obligatoire et en plus cela a l’avantage de rendre le script plus lisible. Vous avez dû remarquer qu'à cette occasion, le prompt :samp:`...` remplace le :samp:`>>>` .
+    Vous avez remarqué qu'à la deuxième ligne, on n'a pas commencé à écrire au début de la ligne. On dit qu'on fait une indentation. Et cette indentation est indispensable pour que Python fasse son travail. En règle générale, le bloc d’instructions (une ou plusieurs lignes) qui dépend d’une ligne (devant elle se terminer par :) doit être indenté. C’est obligatoire et en plus cela a l’avantage de rendre le script plus lisible. Vous avez dû remarquer qu'à cette occasion, le prompt ``...`` remplace le ``>>>`` .
 
 Le principe de définition de fonctions est intéressant pour au moins deux raisons:
 
@@ -93,18 +93,18 @@ Pour enfoncer le clou sur la différence entre une fonction qui retourne quelque
 
 .. sourcecode:: python
 
-	>>> def f(x): return 2*x
+	>>> def f(x): return 2 * x
 	...
-	>>> def g(x): print(2*x)
+	>>> def g(x): print(2 * x)
 	...
 	>>> f(3)
 	6
 	>>> g(3)
 	6
 	>>> # MAIS
-	>>> f(3)==6
+	>>> f(3) == 6
 	True
-	>>> g(3)==6
+	>>> g(3) == 6
 	6
 	False
 

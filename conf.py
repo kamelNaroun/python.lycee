@@ -47,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'débuter avec Python au lycée'
+project = u'débuter avec Python au lycée : le tutoriel'
 copyright = u'2010, Kamel Naroun'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -122,7 +122,7 @@ html_title = project
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-html_favicon = 'images/favicon-python.ico'
+html_favicon = 'images/favicon.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
