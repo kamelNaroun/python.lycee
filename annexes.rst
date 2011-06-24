@@ -22,7 +22,7 @@ ou bien
     # -*- coding: latin-1 -*-
 
 
-Il s'agit d'un pseudo-commentaire indiquant à Python le système de codage utilisé, ici l'utf8 (ou le latin-1) qui comprend les caractères spéciaux commme les caractères accentués, les apostrophes, les cedilles ...
+Il s'agit d'un pseudo-commentaire indiquant à Python le système de codage utilisé, ici l'utf8 (ou le latin-1) qui comprend les caractères spéciaux commme les caractères accentués, les apostrophes, les cédilles ...
 
 
 Les égalités : attention

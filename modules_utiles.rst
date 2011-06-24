@@ -23,7 +23,7 @@ Il y en a beaucoup d'autres et parmi eux, j'ai choisi de présenter les deux qui
 Le module math
 ==============
 
-C'est un module qui permet d'avoir accés aux fonctions mathématiques comme le cosinus (cos), le sinus (sin), la racine carrée (sqrt), le nombre $\pi$ (pi) ...
+C'est un module qui permet d'avoir accès aux fonctions mathématiques comme le cosinus (cos), le sinus (sin), la racine carrée (sqrt), le nombre $\pi$ (pi) ...
 
 .. sourcecode:: python
 
@@ -33,7 +33,7 @@ C'est un module qui permet d'avoir accés aux fonctions mathématiques comme le 
     >>> sqrt(25)            # racine carrée
     5.0
 
-En plus de ce qui a été cité précédemment, on peut ajouter les fonctions tangente (tan), partie entière (floor), exponentielle (exp) et logarithme neperien (log).
+En plus de ce qui a été cité précédemment, on peut ajouter les fonctions tangente (tan), partie entière (floor), exponentielle (exp) et logarithme népérien (log).
 
 Concernant la fonction partie entière, il y en avait déjà une sans l'apport du module math. Il s'agit de int. Vous noterez une légère différence entre les deux.
 
