@@ -84,21 +84,21 @@ Il faut bien faire attention à ne pas confondre l’égalité mathématique `C 
     C_{\rm{nouveau}}=C_{\rm{ancien}}+1
 
 
-Chaîne de caractères
-====================
+Chaînes de caractères
+=====================
 
-Pour afficher une chaîne de caractères, il faut utiliser la commande print.
+Pour afficher une chaîne de caractères, il faut utiliser la commande ``print``.
 
 .. attention::
 
-    Depuis la version 3 de Python, la commande print est considérée comme une fonction dont il faut alors mettre les arguments entre parenthèses.
+    Depuis la version 3 de Python, la commande ``print`` est considérée comme une fonction dont il faut alors mettre les arguments entre parenthèses.
 
 .. sourcecode:: python
 
    >>> print("bonjour monde")
    bonjour monde
 
-On peut aussi affecter à une variable une chaîne de caractères. Il faut juste faire attention que *print(a)* et *print("a")* n’auront pas le même effet, comme le montre l’exemple suivant :
+On peut aussi affecter à une variable une chaîne de caractères. Il faut juste faire attention que ``print(a)`` et ``print("a")`` n’auront pas le même effet, comme le montre l’exemple suivant :
 
 .. sourcecode:: python
 
@@ -117,7 +117,7 @@ Pas le même effet, en fait sauf dans un cas particulier comme celui-ci :
    a
 
 Puis un exemple un peu plus complexe utilisant la commande ``print``,
-qui sait gérer différent types de paramètres pour les afficher sur une même ligne si on les sépare avec des virgules.
+qui sait gérer différents types de paramètres pour les afficher sur une même ligne si on les sépare avec des virgules.
 
 .. sourcecode:: python
 
@@ -125,7 +125,7 @@ qui sait gérer différent types de paramètres pour les afficher sur une même 
    >>> print("le carré de ",a," est ",a**2)
    le carré de 9 est 81
 
-On peut aussi utiliser (mais pour une première lecture, il vaut mieux s’arrêter là) les possibilités de formatage de la fonction print comme ci-dessous.
+On peut aussi utiliser (mais pour une première lecture, il vaut mieux s’arrêter là) les possibilités de formatage de la fonction ``print`` comme ci-dessous.
 
 .. sourcecode:: python
 
@@ -140,7 +140,7 @@ Notez finalement que la chaîne de caractères vide s’écrit ``""`` ou ``''``.
 Listes
 ======
 
-C’est une structure qui peut être très utile. Une liste peut contenir des données de type différents. Dans le cadre de ce cours, nous nous limiterons aux listes de nombres. En Python, une liste se note entre crochets avec la virgule comme séparateur.
+C’est une structure qui peut être très utile. Une liste peut contenir des données de types différents. Dans le cadre de ce cours, nous nous limiterons aux listes de nombres. En Python, une liste se note entre crochets avec la virgule comme séparateur.
 
 .. sourcecode:: python
 
