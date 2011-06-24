@@ -66,7 +66,7 @@ La ligne 1 ne donne aucun affichage. Si la variable a n’existait pas, alors el
    False
 
 On remarque au passage que, dans l’interpréteur interactif, taper juste ``var`` a le même effet que ``print(var)``.
-Ce n’est pas le cas dans l’éditeur où l’on a besoin de l’instruction ``print`` pour afficher une variable.
+Ce n’est pas le cas dans l’éditeur où l’on a besoin de l’instruction ``print`` pour afficher un résultat.
 
 Un dernier exemple :
 

@@ -22,7 +22,7 @@ A l'execution du script, l'ordinateur va afficher la chaîne "Entrer un nombre p
 
 Puis le test comence :
 
-    - si (IF en anglais) la condition (``nb<100``) est vraie, alors le bloc d'instructions qui suit (ici une seule instruction) est executé,
+    - si (IF en anglais) la condition (``nb < 100``) est vraie, alors le bloc d'instructions qui suit (ici une seule instruction) est executé,
     - sinon (ELSE en anglais), c'est-à-dire si la condition (``nb < 100``) est fausse, alors c'est l'autre bloc d'instructions qui est executé.
 
 .. note::
@@ -31,7 +31,7 @@ Puis le test comence :
 
 .. warning::
 
-	Avec Python3, la fonction ``input()`` renvoie systèmatiquement une chaîne de caractères. Donc si c'est un nombre que l'on veut manipuler, il faudra utiliser la fonction ``int()`` s'il s'agit d'un entier ou ``float()`` s'il s'agit d'un décimal. Donc avec Python3, au dessus, il faut remplacer l'instruction ``nb=input()`` par
+	Avec Python3, la fonction ``input()`` renvoie systématiquement une chaîne de caractères. Donc si c'est un nombre que l'on veut manipuler, il faudra utiliser la fonction ``int()`` s'il s'agit d'un entier ou ``float()`` s'il s'agit d'un décimal. Donc avec Python3, au dessus, il faut remplacer l'instruction ``nb = input()`` par
 	
 	.. sourcecode:: python
 	
