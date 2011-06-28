@@ -6,6 +6,8 @@
 Tests (instruction ``if``)
 ******************************
 
+.. index:: if
+
 Commençons par regarder le script ci-dessous :
 
 .. sourcecode:: python
@@ -63,6 +65,4 @@ On peut écrire un petit programme qui nous dit si l'on peut construire un trian
         print("on peut construire le triangle")
     else:      
         print("on ne peut pas construire un tel triangle")
-        
-
 

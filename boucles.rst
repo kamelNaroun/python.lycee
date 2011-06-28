@@ -9,6 +9,8 @@ Boucles (instructions ``while`` et ``for``)
 Tant que
 ========
 
+.. index:: while
+
 Le principe de la boucle ``while``, c'est d'exécuter un bloc d'instructions tant que (while in english) une condition donnée est vraie. Encore une fois commençons par un exemple :
 
 .. sourcecode:: python

@@ -15,6 +15,8 @@ On peut définir une fonction d'une variable . Considérons par exemple la fonct
 
 	f : x\longmapsto 2x+1
 
+.. index:: def, return
+
 Pour la définir en Python :
 
 .. sourcecode:: python

@@ -23,6 +23,8 @@ Il y en a beaucoup d'autres et parmi eux, j'ai choisi de présenter les deux qui
 Le module math
 ==============
 
+.. index:: math
+
 C'est un module qui permet d'avoir accés aux fonctions mathématiques comme le cosinus (cos), le sinus (sin), la racine carrée (sqrt), le nombre $\pi$ (pi) ...
 
 .. sourcecode:: python
@@ -47,6 +49,8 @@ Concernant la fonction partie entière, il y en avait déjà une sans l'apport d
 
 Le module random
 ================
+
+.. index:: random, choice
 
 En anglais "random" signifie "le hasard". Ce module va nous permettre d'utiliser des fonctions générant des nombres aléatoires. Les deux qui me semblent le plus utile dans un premier temps sont :
 - random() qui renvoie un nombre aléatoire entre 0 et 1,
