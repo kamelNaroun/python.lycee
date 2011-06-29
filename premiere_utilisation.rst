@@ -11,7 +11,7 @@ Première utilisation
 L’interpréteur
 ==============
 
-L'interpréteur, on le reconnait facilement. C'est lui qui contient le triple chevron >>> qui est l’invite de Python (prompt en anglais) et qui signifie que Python attend une commande. L’esprit d’utilisation de l'interpréteur est un peu le même que celui d’une calculatrice. 
+L'interpréteur, on le reconnait facilement. C'est lui qui contient le triple chevron ``>>>`` qui est l’invite de Python (*prompt* en anglais) et qui signifie que Python attend une commande. L’esprit d’utilisation de l'interpréteur est un peu le même que celui d’une calculatrice. 
 
 .. sourcecode:: python
 
@@ -20,7 +20,7 @@ L'interpréteur, on le reconnait facilement. C'est lui qui contient le triple ch
 
 On remarque au passage que la priorité des opérations est bien respectée.
 
-Pour écrire des commentaires, il faut commencer par le caractère #.
+Pour écrire des commentaires, il faut commencer par le caractère ``#``.
 
 .. sourcecode:: python
 

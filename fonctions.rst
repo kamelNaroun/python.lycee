@@ -9,7 +9,7 @@ Fonctions
 Les fonctions comme on les connaît au lycée
 *******************************************
 
-On peut définir une fonction d'une variable . Considérons par exemple la fonction affine :math:`f` suivante définie sur **R** par:
+On peut définir une fonction d'une variable. Considérons par exemple la fonction affine :math:`f` suivante définie sur **R** par:
 
 .. math::
 
@@ -60,11 +60,11 @@ La fonction suivante n'a pas de paramètre et ne retourne rien non plus (pas de 
     >>> hi()
     Hello from Python!!!
 
-La fonction ne renvoit rien mais ne chôme pas pour autant, elle écrit quelque chose à l'écran.
-On peut, grâce à ce genre de fonction, lister une suite de tâches répétitive que l'on pourra lancer d'un seul coup.
+La fonction ne renvoie rien mais ne chôme pas pour autant, elle écrit quelque chose à l'écran.
+On peut, grâce à ce genre de fonction, lister une suite de tâches répétitives que l'on pourra lancer d'un seul coup.
 C'est pratique aussi pour clarifier le programme, car on peut en séparer les différentes parties.
 
-La fonction suivante prend du texte en paramètre et ne renvoit toujours rien.
+La fonction suivante prend du texte en paramètre et ne renvoie toujours rien.
 
 .. sourcecode:: python
 

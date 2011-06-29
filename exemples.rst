@@ -59,7 +59,7 @@ Et on obtient :
 
 .. sourcecode:: python
 
-    g(2.0 )= 4.12
+    g(2.0)= 4.12
     g(2.1) = 4.52
     g(2.2) = 4.94
     g(2.3) = 5.38
