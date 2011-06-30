@@ -59,7 +59,7 @@ Et on obtient :
 
 .. sourcecode:: python
 
-    g(2.0 )= 4.12
+    g(2.0) = 4.12
     g(2.1) = 4.52
     g(2.2) = 4.94
     g(2.3) = 5.38
@@ -90,54 +90,57 @@ On peut demander d'écrire un programme qui permet de déterminer l'intervalle d
 
 .. sourcecode:: python
 
-    # -*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 
-    # une liste
-    E = [0.674, 0.679, 0.681, 0.692, 0.705, 0.711, 0.718, 0.718, 0.732, 0.760]
+	# première entrée : la série en liste
+	serie = [0.674, 0.679, 0.681, 0.692, 0.705, 0.711, 0.718, 0.718, 0.732, 0.760]
 
-    # le centre de l'intervalle
-    p = 0.7
+	# deuxième entrée : le centre de l'intervalle
+	centre = 0.7
 
-    # le nombre de valeurs
-    n = float(len(E))        # float inutile à partir de la version 3
+	# le nombre de valeurs
+	effectif_total = float(len(serie))        # float inutile à partir de la version 3
 
-    # initialisation du rayon de l'intervalle
-    r = 0
+	# initialisation du rayon de l'intervalle
+	rayon = 0
 
-    # initialisation du taux de valeurs dans l'intervalle
-    t = 0
+	# initialisation du taux de valeurs dans l'intervalle
+	taux = 0
 
-    # boucle où on augmente le rayon jusqu'à atteindre le taux de 95%
-    while t < 0.95:
-        aux = []
-        for e in E:
-            if (e >= p - r) and (e <= p + r):
-                aux.append(e)
-        t = len(aux) / n
-        r = r + 0.001
-	
-    print("[%0.3f , %0.3f]" %(p - r, p + r))
+	# boucle où on augmente le rayon jusqu'à atteindre le taux de 95%
+	while taux < 0.95:
+		dans_intervalle = []
+		borne_inf = centre - rayon
+		borne_sup = centre + rayon
+		for valeur in serie:
+			if borne_inf <= valeur <= borne_sup:
+				dans_intervalle.append(valeur)
+		taux = len(dans_intervalle) / effectif_total
+		rayon += 0.001		# pour une précision au millième
+
+	print("[%0.3f , %0.3f]" %(borne_inf, borne_sup))
 
 J'ai mis de nombreux commentaires. Sans ceux-ci, voici ce que cela donne :
 
 .. sourcecode:: python
 
-    E = [0.674, 0.679, 0.681, 0.692, 0.705, 0.711, 0.718, 0.718, 0.732, 0.760]
-    p = 0.7
-    n = float(len(E))
+	serie = [0.674, 0.679, 0.681, 0.692, 0.705, 0.711, 0.718, 0.718, 0.732, 0.760]
+	centre = 0.7
+	effectif_total = float(len(serie))
+	rayon = 0
+	taux = 0
 
-    r = 0
-    t = 0
+	while taux < 0.95:
+		dans_intervalle = []
+		borne_inf = centre - rayon
+		borne_sup = centre + rayon
+		for valeur in serie:
+			if borne_inf <= valeur <= borne_sup:
+				dans_intervalle.append(valeur)
+		taux = len(dans_intervalle) / effectif_total
+		rayon += 0.001
 
-    while t < 0.95:
-        aux = []
-        for e in E:
-            if (e >= p - r) and (e <= p + r):
-                aux.append(e)
-        t = len(aux) / n
-        r = r + 0.001
-	
-    print("[%0.3f , %0.3f]" %(p - r, p + r))
+	print("[%0.3f , %0.3f]" %(borne_inf, borne_sup))
 
 
 Un jeu de dé
