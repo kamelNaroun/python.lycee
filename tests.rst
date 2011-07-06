@@ -2,6 +2,8 @@
     :description: tests en Python : usage du if et du else
     :keywords: python, algorithmique, programmation, langage, lycée, tests, if, else, elif, si, sinon
 
+.. _tests:
+
 ******************************
 Tests (instruction ``if``)
 ******************************
