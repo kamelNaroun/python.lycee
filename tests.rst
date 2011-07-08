@@ -32,6 +32,10 @@ Puis le test commence :
 
     Ici les deux blocs d'instructions ne sont composés que d'une seule instruction.
 
+Le couple ``if`` et ``else`` agit finalement comme un aiguillage. Attention
+cependant, l’instruction ``else`` et son bloc sont parfois omis. Dans ce cas,
+si la condition est fausse, rien n’est exécuté.
+
 .. warning::
 
 	Avec Python3, la fonction ``input()`` renvoie systématiquement une chaîne de caractères. Donc si c'est un nombre que l'on veut manipuler, il faudra utiliser la fonction ``int()`` s'il s'agit d'un entier ou ``float()`` s'il s'agit d'un décimal. Donc avec Python3, au dessus, il faut remplacer l'instruction ``nb = input()`` par
