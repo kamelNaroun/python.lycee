@@ -44,25 +44,3 @@ Puis le test commence :
 	
 		nb = float(input())
 
-
-Exemple
-=======
-
-On peut écrire un petit programme qui nous dit si l'on peut construire un triangle dont les trois longueurs seraient données, en utilisant l'inégalité triangulaire).
-
-.. sourcecode:: python
-
-    # -*- coding:utf-8 -*-
-
-    print("Entrer la liste de trois longueurs souhaitées")
-    tri = input()
-
-    tri.sort()      # ordonner les trois longueurs
-
-    if tri[2] <= tri[0] + tri[1]:
-        print("on peut construire le triangle")
-    else:      
-        print("on ne peut pas construire un tel triangle")
-        
-
-
