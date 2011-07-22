@@ -23,7 +23,7 @@ Il y en a beaucoup d'autres et parmi eux, j'ai choisi de présenter les deux qui
 Le module math
 ==============
 
-C'est un module qui permet d'avoir accès aux fonctions mathématiques comme le cosinus (cos), le sinus (sin), la racine carrée (sqrt), le nombre $\pi$ (pi) ...
+C'est un module qui permet d'avoir accès aux fonctions mathématiques comme le cosinus (cos), le sinus (sin), la racine carrée (sqrt), le nombre :math:`\pi` (pi) et bien d’autres...
 
 .. sourcecode:: python
 
