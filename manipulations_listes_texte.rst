@@ -129,29 +129,28 @@ stocké dans la variable ``texte``.
 
 .. sourcecode:: python
 
-	>>> texte = "voici une suite de mots presque en vrac"
-	>>> mot_long = ""  # Cette variable contiendra le mot cherché.
-	>>> # Le recordman de longueur en quelque sorte.
-	>>> # Pour l’instant on stocke le mot vide "" dedans.
-	>>> mots = texte.split()              # On construit la liste des mots.
-	>>> for mot in mots:                  # On parcourt cette liste (boucle for).
-	...     if len(mot) > len(mot_long):  # Si le mot rencontré bat le record de longueur,
-	...         mot_long = mot            # on le proclame recordman.
-	... 
-	>>> mot_long                          # On affiche le résultat.
-	'presque'
+    >>> texte = "voici une suite de mots presque en vrac"
+    >>> mot_long = ""  # Cette variable contiendra le mot cherché.
+    >>> # Le recordman de longueur en quelque sorte.
+    ... # Pour l’instant on stocke le mot vide "" dedans.
+    ... mots = texte.split()              # On construit la liste des mots.
+    >>> for mot in mots:                  # On parcourt cette liste (boucle for).
+    ...     if len(mot) > len(mot_long):  # Si le mot rencontré bat le record de longueur,
+    ...         mot_long = mot            # on le proclame recordman.
+    ... 
+    >>> mot_long                          # On affiche le résultat.
+    'presque'
 
 Liste des rangs d’apparition d’une lettre
 =========================================
 
 .. sourcecode:: python
 
-	>>> mot = "apparition"
-	>>> rangs = []                    # Cette liste va accumuler les rangs de la lettre *i*.
-	>>> for rang in range(len(mot)):  # La variable rang parcourt les entiers de 0 au rang de la dernière lettre du mot.
-	...     if mot[rang] == 'i':
-	...         rangs.append(rang)    # Si la lettre du mot est 'i', on stocke le rang dans notre liste.
-	... 
-	>>> rangs                         # On affiche le résultat.
-	[5, 7]
-
+    >>> mot = "apparition"
+    >>> rangs = []                    # Cette liste va accumuler les rangs de la lettre *i*.
+    >>> for rang in range(len(mot)):  # La variable rang parcourt les entiers de 0 au rang de la dernière lettre du mot.
+    ...     if mot[rang] == 'i':
+    ...         rangs.append(rang)    # Si la lettre du mot est 'i', on stocke le rang dans notre liste.
+    ... 
+    >>> rangs                         # On affiche le résultat.
+    [5, 7]
