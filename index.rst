@@ -27,6 +27,7 @@ Depuis la rentrée 2009, l'**algorithmique** prend une place importante dans les
    fonctions.rst
    tests.rst
    boucles.rst
+   list_comprehensions.rst
    modules_utiles.rst
    exemples.rst
    manipulations_listes_texte.rst
