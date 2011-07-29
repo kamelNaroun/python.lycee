@@ -151,6 +151,9 @@ tables de vérité de ces deux opérateurs.
     False and True vaut False
     True and False vaut False
     True and True vaut True
+
+.. sourcecode:: python
+
     >>> for a in [False, True]:
     ...     for b in [False, True]:
     ...         print(a, "or", b, "vaut", a or b)
