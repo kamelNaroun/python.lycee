@@ -2,9 +2,14 @@
     :description: tests en Python : usage du if et du else
     :keywords: python, algorithmique, programmation, langage, lycée, tests, if, else, elif, si, sinon
 
+.. _tests:
+
 ******************************
 Tests (instruction ``if``)
 ******************************
+
+Premier contact
+===============
 
 Commençons par regarder le script ci-dessous :
 
@@ -29,6 +34,10 @@ Puis le test commence :
 
     Ici les deux blocs d'instructions ne sont composés que d'une seule instruction.
 
+Le couple ``if`` et ``else`` agit finalement comme un aiguillage. Attention
+cependant, l’instruction ``else`` et son bloc sont parfois omis. Dans ce cas,
+si la condition est fausse, rien n’est exécuté.
+
 .. warning::
 
 	Avec Python3, la fonction ``input()`` renvoie systématiquement une chaîne de caractères. Donc si c'est un nombre que l'on veut manipuler, il faudra utiliser la fonction ``int()`` s'il s'agit d'un entier ou ``float()`` s'il s'agit d'un décimal. Donc avec Python3, au dessus, il faut remplacer l'instruction ``nb = input()`` par
@@ -45,24 +54,116 @@ Puis le test commence :
 		nb = float(input())
 
 
-Exemple
-=======
+Comparaison de nombres
+======================
 
-On peut écrire un petit programme qui nous dit si l'on peut construire un triangle dont les trois longueurs seraient données, en utilisant l'inégalité triangulaire).
+Vous aurez souvent à comparer des nombres. Voici une liste des opérateurs
+que vous pourrez utiliser.
+
+* ``x == y`` est vrai quand x est égal à y,
+* ``x != y`` est vrai quand x est différent de y,
+* ``x > y`` est vrai quand x est strictement supérieur à y,
+* ``x < y`` est vrai quand x est strictement inférieur à y,
+* ``x >= y`` est vrai quand x est supérieur ou égal à y, et
+* ``x <= y`` est vrai quand x est inférieur ou égal à y.
+
+
+Doubles inégalités
+==================
+
+Python permet de plus l’enchaînement des comparaisons.
+
+En mathématiques, il n’est pas rare que l’on ait à écrire
+:math:`3 \leq x \leq 7` pour dire que x appartient à l’intervalle
+:math:`[3;7]`. En Python, cela peut être fait grâce au connecteur ``and``
+(voir la section :ref:`booleens`), mais c’est bien plus lisible avec
+la double inégalité, et chaque expression n’est évaluée qu’une fois.
 
 .. sourcecode:: python
 
-    # -*- coding:utf-8 -*-
+    >>> for x in range(10):
+    ...     if 3 <= x <= 7:
+    ...         print(x, "est dans l'intervalle")
+    ...     else:
+    ...         print(x, "n'est pas dans l'intervalle")
+    ... 
+    (0, "n'est pas dans l'intervalle")
+    (1, "n'est pas dans l'intervalle")
+    (2, "n'est pas dans l'intervalle")
+    (3, "est dans l'intervalle")
+    (4, "est dans l'intervalle")
+    (5, "est dans l'intervalle")
+    (6, "est dans l'intervalle")
+    (7, "est dans l'intervalle")
+    (8, "n'est pas dans l'intervalle")
+    (9, "n'est pas dans l'intervalle")
 
-    print("Entrer la liste de trois longueurs souhaitées")
-    tri = input()
 
-    tri.sort()      # ordonner les trois longueurs
+.. _booleens:
 
-    if tri[2] <= tri[0] + tri[1]:
-        print("on peut construire le triangle")
-    else:      
-        print("on ne peut pas construire un tel triangle")
-        
+Compléments sur les booléens
+============================
 
+En début de chapitre nous avons vu que certaines conditions pouvaient
+être «vraies» ou «fausses». Une branche des mathématiques appellée
+«logique» s’occupe justement de ce genre de problèmes et les booléens_
+en sont les briques élémentaires. En Python, les mots ``True`` et ``False``
+représentent respectivement «vrai» et «faux» (comme en anglais en fait).
 
+.. sourcecode:: python
+
+    >>> True
+    True
+    >>> False
+    False
+    >>> true  # attention à la majuscule !!!
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    NameError: name 'true' is not defined
+    >>> 0 == 0
+    True
+    >>> 0 > 1
+    False
+
+La négation s’exprime avec ``not``.
+
+.. sourcecode:: python
+
+    >>> not True
+    False
+    >>> not False
+    True
+    >>> not 0 == 0
+    False
+
+On peut combiner deux booléens entre eux avec les opérateurs ``and`` et
+``or``. Ce sont respectivement les opérateurs logiques «et» et «ou»
+(comme en anglais aussi). Ci-dessous nous demandons à Python d’écrire les
+tables de vérité de ces deux opérateurs.
+
+.. sourcecode:: python
+
+    >>> for a in [False, True]:
+    ...     for b in [False, True]:
+    ...         print(a, "and", b, "vaut", a and b)
+    ... 
+    False and False vaut False
+    False and True vaut False
+    True and False vaut False
+    True and True vaut True
+
+.. sourcecode:: python
+
+    >>> for a in [False, True]:
+    ...     for b in [False, True]:
+    ...         print(a, "or", b, "vaut", a or b)
+    ... 
+    False or False vaut False
+    False or True vaut True
+    True or False vaut True
+    True or True vaut True
+
+Vous trouverez d’autres informations dans la documentation de Python au sujet
+des booléens et des opérateurs logiques.
+
+.. _booléens: http://fr.wikipedia.org/wiki/Bool%C3%A9en

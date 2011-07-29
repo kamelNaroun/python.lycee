@@ -2,6 +2,8 @@
     :description: les fonctions en Python, au lycée
     :keywords: python, algorithmique, programmation, langage, lycée, fonctions, def
 
+.. _fonctions:
+
 *********
 Fonctions
 *********
