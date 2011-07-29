@@ -163,4 +163,4 @@ tables de vérité de ces deux opérateurs.
 Vous trouverez d’autres informations dans la documentation de Python au sujet
 des booléens et des opérateurs logiques.
 
-.. _booléens: http://www.wikipedia.org/bool!!!!!!!!!!!!!!!!!!!!!!!!!
+.. _booléens: http://fr.wikipedia.org/wiki/Bool%C3%A9en
