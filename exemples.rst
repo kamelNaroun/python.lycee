@@ -59,7 +59,11 @@ Et on obtient :
 
 .. sourcecode:: python
 
+<<<<<<< HEAD
     g(2.0)= 4.12
+=======
+    g(2.0) = 4.12
+>>>>>>> meilleurs_exemples
     g(2.1) = 4.52
     g(2.2) = 4.94
     g(2.3) = 5.38
@@ -92,52 +96,34 @@ On peut demander d'écrire un programme qui permet de déterminer l'intervalle d
 
     # -*- coding:utf-8 -*-
 
-    # une liste
-    E = [0.674, 0.679, 0.681, 0.692, 0.705, 0.711, 0.718, 0.718, 0.732, 0.760]
+    # première entrée : la série en liste
+    serie = [0.674, 0.679, 0.681, 0.692, 0.705, 0.711, 0.718, 0.718, 0.732, 0.760]
 
-    # le centre de l'intervalle
-    p = 0.7
+    # deuxième entrée : le centre de l'intervalle
+    centre = 0.7
 
     # le nombre de valeurs
-    n = float(len(E))        # float inutile à partir de la version 3
+    effectif_total = float(len(serie))   # float() inutile à partir de la version 3
 
     # initialisation du rayon de l'intervalle
-    r = 0
+    rayon = 0
 
     # initialisation du taux de valeurs dans l'intervalle
-    t = 0
+    taux = 0
 
-    # boucle où on augmente le rayon jusqu'à atteindre le taux de 95%
-    while t < 0.95:
-        aux = []
-        for e in E:
-            if (e >= p - r) and (e <= p + r):
-                aux.append(e)
-        t = len(aux) / n
-        r = r + 0.001
-	
-    print("[%0.3f , %0.3f]" %(p - r, p + r))
+    # boucle où on augmente le rayon d'un intervalle centré sur la valeur centre
+    # jusqu'à atteindre le taux de 95%
+    while taux < 0.95:
+        # initialisation de la variable qui compte
+        # le nombre d'éléments dans l'intervalle
+        effectif = 0
+        for valeur in serie:
+            if centre - rayon <= valeur <= centre + rayon:
+                effectif += 1
+        taux = effectif / effectif_total
+        rayon += 0.001      # pour une précision au millième
 
-J'ai mis de nombreux commentaires. Sans ceux-ci, voici ce que cela donne :
-
-.. sourcecode:: python
-
-    E = [0.674, 0.679, 0.681, 0.692, 0.705, 0.711, 0.718, 0.718, 0.732, 0.760]
-    p = 0.7
-    n = float(len(E))
-
-    r = 0
-    t = 0
-
-    while t < 0.95:
-        aux = []
-        for e in E:
-            if (e >= p - r) and (e <= p + r):
-                aux.append(e)
-        t = len(aux) / n
-        r = r + 0.001
-	
-    print("[%0.3f , %0.3f]" %(p - r, p + r))
+    print("[%0.3f , %0.3f]" %(centre - rayon, centre + rayon))
 
 
 Un jeu de dé
