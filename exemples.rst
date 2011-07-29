@@ -59,11 +59,7 @@ Et on obtient :
 
 .. sourcecode:: python
 
-<<<<<<< HEAD
-    g(2.0)= 4.12
-=======
     g(2.0) = 4.12
->>>>>>> meilleurs_exemples
     g(2.1) = 4.52
     g(2.2) = 4.94
     g(2.3) = 5.38
@@ -75,7 +71,7 @@ Et on obtient :
     g(2.9) = 8.47
     g(3.0) = 9.06
 
-Evidemment dans les deux cas, le signe = est affiché, mais il s'agit bien entendu d'une approximation. On peut signaler au passage l'existence de la fonction round() qui donne l'arrondi à la précision demandée
+Evidemment dans les deux cas, le signe = est affiché, mais il s'agit bien entendu d'une approximation. On peut signaler au passage l'existence de la fonction `round()` qui donne l'arrondi à la précision demandée
 
 .. sourcecode:: python
 
@@ -151,7 +147,7 @@ On lance un dé. Si le numéro est 1, 5 ou 6, alors c'est gagné, sinon c'est pe
             else:
                 print("perdu")
 
-En utilisant elif, on peut simplifier le script comme ceci :
+En utilisant `elif`, on peut simplifier le script comme ceci :
 
 .. sourcecode:: python
 
