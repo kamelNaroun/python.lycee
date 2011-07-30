@@ -71,7 +71,7 @@ Et on obtient :
     g(2.9) = 8.47
     g(3.0) = 9.06
 
-Evidemment dans les deux cas, le signe = est affiché, mais il s'agit bien entendu d'une approximation. On peut signaler au passage l'existence de la fonction `round()` qui donne l'arrondi à la précision demandée
+Evidemment dans les deux cas, le signe = est affiché, mais il s'agit bien entendu d'une approximation. On peut signaler au passage l'existence de la fonction ``round()`` qui donne l'arrondi à la précision demandée
 
 .. sourcecode:: python
 
@@ -147,7 +147,7 @@ On lance un dé. Si le numéro est 1, 5 ou 6, alors c'est gagné, sinon c'est pe
             else:
                 print("perdu")
 
-En utilisant `elif`, on peut simplifier le script comme ceci :
+En utilisant ``elif``, on peut simplifier le script comme ceci :
 
 .. sourcecode:: python
 
@@ -182,4 +182,5 @@ Et maintenant en utilisant une liste, on peut faire encore plus simple :
         print("gagné")
     else:
         print("perdu")
+
 

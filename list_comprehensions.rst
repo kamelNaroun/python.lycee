@@ -64,10 +64,8 @@ condition est vraie».
     >>> [x for x in liste if x > 1]
     [2, 3]
 
-Les tests peuvent aussi être donnés sous la forme de :ref:`fonctions`,
-à condition que celles-ci retournent un booléen.
-
-Si ``test`` est une fonction qui retourne un booléen (voir :ref:`booleens`),
+Les tests peuvent aussi être donnés sous la forme de :ref:`fonctions`. En
+effet, si ``test`` est une fonction qui retourne un booléen (voir :ref:`booleens`),
 alors on peut l’utiliser pour filtrer avec la syntaxe
 ``[x for x in ma_liste if test(x)]``.
 
