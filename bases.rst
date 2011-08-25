@@ -164,7 +164,7 @@ Il peut être utile de connaitre ce que l’on appelle la **longueur d’une lis
    >>> len(a)
    4
 
-On peut vouloir **ranger** une liste de nombres dans **l’ordre croissant**.
+On peut vouloir **ordonner** une liste de nombres dans **l’ordre croissant**.
 
 .. sourcecode:: python
 
@@ -182,7 +182,7 @@ On peut vouloir **ajouter** un nombre à la liste, dans le sens d'agrandir la li
    >>> a
    [9, 7, 6, 9, 2]
 
-Puis il y a des listes toutes faites que l’on obtient grâce à la fonction **range**.
+Puis il y a des listes toutes faites que l’on obtient grâce à la fonction ``range``.
 
 .. sourcecode:: python
 
