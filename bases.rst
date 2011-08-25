@@ -122,7 +122,7 @@ qui sait gérer différents types de paramètres pour les afficher sur une même
 .. sourcecode:: python
 
    >>> a = 9
-   >>> print("le carré de ",a," est ",a**2)
+   >>> print("le carré de ", a, " est ", a**2)
    le carré de 9 est 81
 
 On peut aussi utiliser (mais pour une première lecture, il vaut mieux s’arrêter là) les possibilités de formatage de la fonction ``print`` comme ci-dessous.
@@ -130,7 +130,7 @@ On peut aussi utiliser (mais pour une première lecture, il vaut mieux s’arrê
 .. sourcecode:: python
 
    >>> a = 9
-   >>> print("le carré de %i est %i" %(a,a**2))
+   >>> print("le carré de %i est %i" %(a, a**2))
    le carré de 9 est 81
 
 Pour plus d’informations sur ce formatage, voir en annexe.
