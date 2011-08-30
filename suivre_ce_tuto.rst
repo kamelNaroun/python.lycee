@@ -16,6 +16,21 @@ Nous supposerons ici:
 
 Sinon vous pouvez allez voir les paragraphes :ref:`installation`, :ref:`interpreteur` et :ref:`editeur`.
 
+Sections proposées en deuxième lecture
+**************************************
+
+Ce tutoriel s’adressant à un large public, nous avons aussi voulu y inclure
+des notions assez avancées. Vous pourrez les passer en première
+lecture si vous ne vous sentez pas assez solide, et y revenir lors
+d’une deuxième lecture. Vous pourrez aussi les lire directement bien sûr,
+si vous en sentez la curiosité et la force.
+
+Les passages en questions seront indiqués ainsi:
+
+.. admonition:: Pour aller plus loin
+
+    Notion moins facile, à lire peut-être dans un second temps.
+
 Créer son propre aide-mémoire
 *****************************
 
