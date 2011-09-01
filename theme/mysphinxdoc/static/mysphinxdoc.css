@@ -1,3 +1,6 @@
+/*
+très fortement inspiré de sphinxdoc.css dont la parentalité est ci-dessous
+*/
 /**
  * Sphinx stylesheet -- sphinxdoc theme
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -128,7 +131,7 @@ div.footer a {
 
 /* -- body styles ----------------------------------------------------------- */
 
-p {    
+p {
     margin: 0.8em 0 0.5em 0;
 }
 
@@ -270,7 +273,7 @@ table td, table th {
     padding: 0.2em 0.5em 0.2em 0.5em;
 }
 
-div.admonition, div.warning {
+div.admonition, div.attention {
     font-size: 0.9em;
     margin: 1em 0 1em 0;
     border: 1px solid #86989B;
@@ -278,17 +281,17 @@ div.admonition, div.warning {
     padding: 0;
 }
 
-div.admonition p, div.warning p {
+div.admonition p, div.attention p {
     margin: 0.5em 1em 0.5em 1em;
     padding: 0;
 }
 
-div.admonition pre, div.warning pre {
+div.admonition pre, div.attention pre {
     margin: 0.4em 1em 0.4em 1em;
 }
 
 div.admonition p.admonition-title,
-div.warning p.admonition-title {
+div.attention p.admonition-title {
     margin: 0;
     padding: 0.1em 0 0.1em 0.5em;
     color: white;
@@ -297,17 +300,17 @@ div.warning p.admonition-title {
     background-color: #AFC1C4;
 }
 
-div.warning {
+div.attention {
     border: 1px solid #940000;
 }
 
-div.warning p.admonition-title {
+div.attention p.admonition-title {
     background-color: #CF0000;
     border-bottom-color: #940000;
 }
 
 div.admonition ul, div.admonition ol,
-div.warning ul, div.warning ol {
+div.attention ul, div.attention ol {
     margin: 0.1em 0.5em 0.5em 3em;
     padding: 0;
 }
