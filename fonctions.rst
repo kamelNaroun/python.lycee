@@ -11,11 +11,12 @@ Fonctions
 Les fonctions comme on les connaît au lycée
 *******************************************
 
-On peut définir une fonction d'une variable. Considérons par exemple la fonction affine :math:`f` suivante définie sur **R** par:
+On peut définir une fonction d'une variable. Considérons par exemple la fonction
+affine :math:`f` suivante définie sur :math:`\mathbb{R}` par: 
 
 .. math::
 
-	f : x\longmapsto 2x+1
+    f : x\longmapsto 2x+1
 
 Pour la définir en Python :
 
@@ -95,20 +96,20 @@ Pour enfoncer le clou sur la différence entre une fonction qui retourne quelque
 
 .. sourcecode:: python
 
-	>>> def f(x): return 2 * x
-	...
-	>>> def g(x): print(2 * x)
-	...
-	>>> f(3)
-	6
-	>>> g(3)
-	6
-	>>> # MAIS
-	>>> f(3) == 6
-	True
-	>>> g(3) == 6
-	6
-	False
+    >>> def f(x): return 2 * x
+    ...
+    >>> def g(x): print(2 * x)
+    ...
+    >>> f(3)
+    6
+    >>> g(3)
+    6
+    >>> # MAIS
+    >>> f(3) == 6
+    True
+    >>> g(3) == 6
+    6
+    False
 
 Beaucoup de combinaisons sont possibles pour les fonctions,
 à vous de construire les bonnes suivant vos besoins,

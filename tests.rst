@@ -38,20 +38,20 @@ Le couple ``if`` et ``else`` agit finalement comme un aiguillage. Attention
 cependant, l’instruction ``else`` et son bloc sont parfois omis. Dans ce cas,
 si la condition est fausse, rien n’est exécuté.
 
-.. warning::
+.. attention::
 
-	Avec Python3, la fonction ``input()`` renvoie systématiquement une chaîne de caractères. Donc si c'est un nombre que l'on veut manipuler, il faudra utiliser la fonction ``int()`` s'il s'agit d'un entier ou ``float()`` s'il s'agit d'un décimal. Donc avec Python3, au dessus, il faut remplacer l'instruction ``nb = input()`` par
-	
-	.. sourcecode:: python
-	
-		chaine = input()
-		nb = float(chaine)
-	
-	ou bien directement
-	
-	.. sourcecode:: python
-	
-		nb = float(input())
+    Avec Python3, la fonction ``input()`` renvoie systématiquement une chaîne de caractères. Donc si c'est un nombre que l'on veut manipuler, il faudra utiliser la fonction ``int()`` s'il s'agit d'un entier ou ``float()`` s'il s'agit d'un décimal. Donc avec Python3, au dessus, il faut remplacer l'instruction ``nb = input()`` par
+    
+    .. sourcecode:: python
+    
+        chaine = input()
+        nb = float(chaine)
+    
+    ou bien directement
+    
+    .. sourcecode:: python
+    
+        nb = float(input())
 
 
 Comparaison de nombres
