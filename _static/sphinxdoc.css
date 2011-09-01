@@ -320,3 +320,15 @@ div.versioninfo {
     line-height: 1.3em;
     font-size: 0.9em;
 }
+
+/* New admonition: Pour aller plus loin */
+
+div.admonition-pour-aller-plus-loin {
+    background-color: #E5FFE5;
+    border: 1px solid #009400;
+}
+
+div.admonition-pour-aller-plus-loin p.admonition-title {
+    background-color: #00CF00;
+    border-bottom-color: #009400;
+}
