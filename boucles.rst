@@ -26,7 +26,7 @@ Le principe de la boucle ``while``, c'est d'exécuter un bloc d'instructions tan
 
 Ici tant que (while) la condition :math:`(i\leq5)` est vraie, le bloc d'instructions (il y en a deux dans notre cas) est executé.
 
-.. warning::
+.. attention::
 
     La deuxième instruction est primordiale car elle assure que l'on va sortir de la boucle. En effet, avec ce genre de boucle, il faut faire attention à ne pas construire une **boucle sans fin**.
 
@@ -42,7 +42,7 @@ Admettons que l'on veuille afficher 5 fois le mot *blabla*. Voici ce que l'on pe
 
 .. sourcecode:: python
 
-    >>> for i in range(5):	# pour i allant de 0 à 4
+    >>> for i in range(5):  # pour i allant de 0 à 4
     ...     print("blabla")
     ...
     blabla
@@ -55,7 +55,7 @@ Bon, arrêtons là le blabla et regardons un exemple plus mathématique. Si on v
 
 .. sourcecode:: python
 
-    >>> for i in range(1, 8):	# pour i allant de 1 à 7
+    >>> for i in range(1, 8):   # pour i allant de 1 à 7
     ...     print(i**2)
     ...
     1
