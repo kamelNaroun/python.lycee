@@ -1,9 +1,9 @@
 Débuter avec Python au lycée
 ============================
 
-Ce projet est un tutoriel pour l'apprentissage de Python
-dans le cadre de l'enseignement de l'algorithmique
-au programme de mathématiques au lycée.
+Ce projet est un **tutoriel** pour l'apprentissage de **Python**
+dans le cadre de l'enseignement de l'**algorithmique**
+au **programme de mathématiques du lycée**.
 
 Les sources sont des fichiers rst.
 Et `le tutoriel en version html`_ est générée par Sphinx_.
