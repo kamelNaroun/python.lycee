@@ -44,7 +44,7 @@ Le résultat n'est pas celui attendu. En effet, on a bien
 
 .. math::
 
-	(\sqrt{2})^2+(\sqrt{3})^2=(\sqrt{5})^2
+    (\sqrt{2})^2+(\sqrt{3})^2=(\sqrt{5})^2
 
 
 Différences entre Python2 et Python3
@@ -56,5 +56,60 @@ A compléter
 Messages d'erreur
 =================
 
-A completer
+Voici quelques messages d'erreurs que l'on peut rencontrer :
 
+.. sourcecode:: python
+
+    >>> a + 1
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    NameError: name 'a' is not defined
+
+Il faut d'abord définir `a` en lui donnant une valeur.
+
+.. sourcecode:: python
+
+    >>> 1 / 0
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ZeroDivisionError: integer division or modulo by zero
+
+La division par zéro est impossible. Personne ne ferait cette erreur de cette
+façon. Mais dans l'exemple suivant, cela peut être plus fréquent.
+
+.. sourcecode:: python
+
+    >>> for x in range(4):
+    ...     print(1/x)
+    ... 
+    Traceback (most recent call last):
+      File "<stdin>", line 2, in <module>
+    ZeroDivisionError: integer division or modulo by zero
+
+
+.. sourcecode:: python
+
+    >>> chaine = "blabla"
+    >>> 1 + chaine
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+Le nombre 1 et la chaine de caractères `chaine` ne sont pas du même type. On ne
+peut donc pas les ajouter.
+
+.. sourcecode:: python
+
+    >>> chaine + 1
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: cannot concatenate 'str' and 'int' objects
+
+Ici, on aurait pu s'attendre à avoir le même message d'erreur, mais pour les
+chaines de caractères, l'opération `+` correspond à la concaténation qui ici
+n'est pas possible puisque 1 n'est pas de  ce type. Par contre :
+
+.. sourcecode:: python
+
+    >>> chaine + "1"
+    'blabla1'
