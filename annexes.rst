@@ -44,13 +44,21 @@ Le résultat n'est pas celui attendu. En effet, on a bien
 
 .. math::
 
-	(\sqrt{2})^2+(\sqrt{3})^2=(\sqrt{5})^2
+    (\sqrt{2})^2+(\sqrt{3})^2=(\sqrt{5})^2
 
 
 Différences entre Python2 et Python3
 ====================================
 
-A compléter
+La référence sur la question est `cette page`_ en anglais. Elle relate les
+nouveautés de la version 3 de Python.
+
+En ce qui concerne ce tutoriel, on peut citer quelques différences importantes :
+
+    - `print`
+    - la division
+    - `range`
+    - `input`
 
 
 Messages d'erreur
@@ -58,3 +66,31 @@ Messages d'erreur
 
 A completer
 
+.. sourcecode:: python
+
+    >>> a+1
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    NameError: name 'a' is not defined
+
+.. sourcecode:: python
+
+    >>> 1/0
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ZeroDivisionError: integer division or modulo by zero
+
+.. sourcecode:: python
+
+    >>> nom = "Pierre"
+    >>> nom + 1
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: cannot concatenate 'str' and 'int' objects
+    >>> 1 + nom
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+
+.. _`cette page`: http://docs.python.org/py3k/whatsnew/3.0.html
