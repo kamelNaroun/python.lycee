@@ -11,6 +11,7 @@ Nous tenons à remercier les sites qui nous référencent. En voici la liste :
     - `le blog de Patrick Vergain`_
     - autourdesmaths_
     - wiki.python.org_
+    - `manuel Python de www.jchr.be`_
     
 
 .. _`l'académie de Rouen`: http://maths.spip.ac-rouen.fr/spip.php?article324
@@ -20,3 +21,4 @@ Nous tenons à remercier les sites qui nous référencent. En voici la liste :
 .. _`le blog de Patrick Vergain` : https://pvergain.wordpress.com/tag/python-xy/
 .. _autourdesmaths: http://autourdesmaths.fr/spip/spip.php?article24
 .. _wiki.python.org: http://wiki.python.org/moin/BeginnersGuide/NonProgrammers
+.. _`manuel Python de www.jchr.be`: http://www.jchr.be/python/manuel.htm
