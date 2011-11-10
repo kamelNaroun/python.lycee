@@ -110,5 +110,17 @@ Les deux derniers paragraphes peuvent se combiner.
 ``[f(x) for x in ma_liste if test(x)]`` peut se lire «la liste des f(x) quand
 x parcourt la liste ma_liste, tels que test(x) est vrai».
 
+
+Exercice
+========
+
+Pour une application en statistiques, à partir d'une liste d'effectifs,
+déterminer, grâce à des listes en compréhension, les listes des
+
+    - effectifs cumulés croissants,
+    - fréquences,
+    - fréquences cumulées croissantes.
+
+
 .. _reconnue: http://fr.wikipedia.org/wiki/Liste_en_compr%C3%A9hension
 .. _on peut décrire certains ensembles: http://fr.wikipedia.org/wiki/Ensemble#D.C3.A9finition_d.E2.80.99un_ensemble_en_compr.C3.A9hension

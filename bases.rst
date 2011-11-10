@@ -210,3 +210,9 @@ départ est automatiquement 0.
    [0, 1, 2, 3, 4]
 
 Notez finalement que la liste vide s’écrit ``[]``.
+
+Exercice
+========
+
+En utilisant la fonction ``range``, comment obtenir la liste
+``[4, 7, 10, 13, 16]`` ?
