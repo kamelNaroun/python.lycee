@@ -38,13 +38,15 @@ Pour savoir combien de fois la boucle ``while`` est executée, il peut être uti
 Pour
 ====
 
+.. index:: for
+
 Lorsque l'on souhaite répéter un nombre **donné** de fois la même instruction ou le même bloc d'instructions, la commande ``for`` est la plus appropriée.
 
 Admettons que l'on veuille afficher 5 fois le mot *blabla*. Voici ce que l'on peut faire.
 
 .. sourcecode:: python
 
-    >>> for i in range(5):	# pour i allant de 0 à 4
+    >>> for i in range(5):  # pour i allant de 0 à 4
     ...     print("blabla")
     ...
     blabla
@@ -57,7 +59,7 @@ Bon, arrêtons là le blabla et regardons un exemple plus mathématique. Si on v
 
 .. sourcecode:: python
 
-    >>> for i in range(1, 8):	# pour i allant de 1 à 7
+    >>> for i in range(1, 8):   # pour i allant de 1 à 7
     ...     print(i**2)
     ...
     1

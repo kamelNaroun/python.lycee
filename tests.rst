@@ -6,7 +6,7 @@
 Tests (instruction ``if``)
 ******************************
 
-.. index:: if
+.. index:: if, input
 
 Commençons par regarder le script ci-dessous :
 
@@ -31,20 +31,22 @@ Puis le test comence :
 
     Ici les deux blocs d'instructions ne sont composés que d'une seule instruction.
 
+.. index :: int, float
+
 .. warning::
 
-	Avec Python3, la fonction ``input()`` renvoie systèmatiquement une chaîne de caractères. Donc si c'est un nombre que l'on veut manipuler, il faudra utiliser la fonction ``int()`` s'il s'agit d'un entier ou ``float()`` s'il s'agit d'un décimal. Donc avec Python3, au dessus, il faut remplacer l'instruction ``nb=input()`` par
-	
-	.. sourcecode:: python
-	
-		chaine = input()
-		nb = float(chaine)
-	
-	ou bien directement
-	
-	.. sourcecode:: python
-	
-		nb = float(input())
+    Avec Python3, la fonction ``input()`` renvoie systèmatiquement une chaîne de caractères. Donc si c'est un nombre que l'on veut manipuler, il faudra utiliser la fonction ``int()`` s'il s'agit d'un entier ou ``float()`` s'il s'agit d'un décimal. Donc avec Python3, au dessus, il faut remplacer l'instruction ``nb=input()`` par
+    
+    .. sourcecode:: python
+    
+        chaine = input()
+        nb = float(chaine)
+    
+    ou bien directement
+    
+    .. sourcecode:: python
+    
+        nb = float(input())
 
 
 Exemple
