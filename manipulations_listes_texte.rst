@@ -9,6 +9,8 @@ Manipulation basique de listes et de texte
 Manipulation de listes
 ======================
 
+.. index:: index, count
+
 .. sourcecode:: python
 
     >>> maliste = [0, "un", 2]  # on définit une liste pour faire des tests
@@ -58,6 +60,8 @@ Manipulation de texte
     23
     >>> montexte.count("b")
     5
+
+.. index:: lower, strip, split
 
 Certaines manipulations sont propres aux chaînes.
 

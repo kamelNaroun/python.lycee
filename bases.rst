@@ -27,6 +27,7 @@ Dans le tableau ci-après, sont présentés les symboles utilisés pour les opé
 
     Si vous n’utilisez pas une version 3 de Python, la division fera comme la division entière. Pour retrouver la «vraie» division, c’est-à-dire la division décimale, il faut importer un module comme le montre l’exemple suivant.
 
+.. index:: divsion
 
 .. sourcecode:: python
 
@@ -88,6 +89,8 @@ Chaînes de caractères
 =====================
 
 Pour afficher une chaîne de caractères, il faut utiliser la commande ``print``.
+
+.. index:: print
 
 .. attention::
 
@@ -156,6 +159,8 @@ La **numérotation** des éléments de la liste **commence à 0**.
    >>> a[2]
    6
 
+.. index:: len
+
 Il peut être utile de connaitre ce que l’on appelle la **longueur d’une liste**.
 
 .. sourcecode:: python
@@ -164,7 +169,10 @@ Il peut être utile de connaitre ce que l’on appelle la **longueur d’une lis
    >>> len(a)
    4
 
+
 On peut vouloir **ordonner** une liste de nombres dans **l’ordre croissant**.
+
+.. index:: sort
 
 .. sourcecode:: python
 
@@ -172,6 +180,8 @@ On peut vouloir **ordonner** une liste de nombres dans **l’ordre croissant**.
    >>> a.sort()
    >>> a
    [6,7,9,9]
+
+.. index:: append
 
 On peut vouloir **ajouter** un nombre à la liste, dans le sens d'agrandir la liste d'un élément.
 
@@ -182,7 +192,10 @@ On peut vouloir **ajouter** un nombre à la liste, dans le sens d'agrandir la li
    >>> a
    [9, 7, 6, 9, 2]
 
+
 Puis il y a des listes toutes faites que l’on obtient grâce à la fonction ``range``.
+
+.. index:: range
 
 .. sourcecode:: python
 
@@ -210,3 +223,4 @@ départ est automatiquement 0.
    [0, 1, 2, 3, 4]
 
 Notez finalement que la liste vide s’écrit ``[]``.
+

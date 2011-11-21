@@ -11,6 +11,8 @@ Tests (instruction ``if``)
 Premier contact
 ===============
 
+.. index:: if, input
+
 Commençons par regarder le script ci-dessous :
 
 .. sourcecode:: python
@@ -37,6 +39,8 @@ Puis le test commence :
 Le couple ``if`` et ``else`` agit finalement comme un aiguillage. Attention
 cependant, l’instruction ``else`` et son bloc sont parfois omis. Dans ce cas,
 si la condition est fausse, rien n’est exécuté.
+
+.. index :: int, float
 
 .. attention::
 
@@ -154,6 +158,7 @@ tables de vérité de ces deux opérateurs.
 
 .. sourcecode:: python
 
+<<<<<<< HEAD
     >>> for a in [False, True]:
     ...     for b in [False, True]:
     ...         print(a, "or", b, "vaut", a or b)
@@ -165,5 +170,11 @@ tables de vérité de ces deux opérateurs.
 
 Vous trouverez d’autres informations dans la documentation de Python au sujet
 des booléens et des opérateurs logiques.
+=======
+    if tri[2] <= tri[0] + tri[1]:
+        print("on peut construire le triangle")
+    else:      
+        print("on ne peut pas construire un tel triangle")
+>>>>>>> index
 
 .. _booléens: http://fr.wikipedia.org/wiki/Bool%C3%A9en

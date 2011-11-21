@@ -9,6 +9,8 @@ Boucles (instructions ``while`` et ``for``)
 Tant que
 ========
 
+.. index:: while
+
 Le principe de la boucle ``while``, c'est d'exécuter un bloc d'instructions tant que (while in english) une condition donnée est vraie. Encore une fois commençons par un exemple :
 
 .. sourcecode:: python
@@ -35,6 +37,8 @@ Pour savoir combien de fois la boucle ``while`` est executée, il peut être uti
 
 Pour
 ====
+
+.. index:: for
 
 Lorsque l'on souhaite répéter un nombre **donné** de fois la même instruction ou le même bloc d'instructions, la commande ``for`` est la plus appropriée.
 

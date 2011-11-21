@@ -18,6 +18,8 @@ affine :math:`f` suivante définie sur :math:`\mathbb{R}` par:
 
     f : x\longmapsto 2x+1
 
+.. index:: def, return
+
 Pour la définir en Python :
 
 .. sourcecode:: python
