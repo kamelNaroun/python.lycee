@@ -44,8 +44,8 @@ Pour toute la suite, je suppose que la division est décimale.
 Affectations et égalité
 =======================
 
-Une affectation se fait en utilisant le signe =. Tester si une égalité est vraie
-ou fausse se fait en utilisant ==. Regardons l’exemple suivant.
+Une affectation se fait en utilisant le signe ``=``. Tester si une égalité est vraie
+ou fausse se fait en utilisant ``==``. Regardons l’exemple suivant.
 
 .. sourcecode:: python
    :linenos:
