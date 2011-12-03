@@ -6,6 +6,8 @@
 Manipulation basique de listes et de texte
 ******************************************
 
+.. _manips_listes:
+
 Manipulation de listes
 ======================
 
@@ -31,6 +33,8 @@ Manipulation de listes
 
 Manipulation de texte
 =====================
+
+.. _manips_texte:
 
 .. note::
 

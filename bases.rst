@@ -132,17 +132,20 @@ qui sait gérer différents types de paramètres pour les afficher sur une même
    >>> print("le carré de ", a, " est ", a**2)
    le carré de 9 est 81
 
-On peut aussi utiliser (mais pour une première lecture, il vaut mieux s’arrêter là) les possibilités de formatage de la fonction ``print`` comme ci-dessous.
+.. admonition:: Pour aller plus loin
 
-.. sourcecode:: python
+    On peut aussi utiliser (mais pour une première lecture, il vaut mieux s’arrêter là) les possibilités de formatage de la fonction ``print`` comme ci-dessous.
 
-   >>> a = 9
-   >>> print("le carré de %i est %i" %(a, a**2))
-   le carré de 9 est 81
+    .. sourcecode:: python
 
-Pour plus d’informations sur ce formatage, voir en annexe.
+       >>> a = 9
+       >>> print("le carré de %i est %i" %(a, a**2))
+       le carré de 9 est 81
 
-Notez finalement que la chaîne de caractères vide s’écrit ``""`` ou ``''``.
+    Pour plus d’informations sur ce formatage, voir la documentation de ``print``.
+
+Notez finalement que la chaîne de caractères vide s’écrit ``""`` ou ``''`` et
+que Python fourni des outils pour manipuler les chaînes à volonté (voir :ref:`manips_chaines`).
 
 Listes
 ======
@@ -226,5 +229,5 @@ départ est automatiquement 0.
    >>> x
    [0, 1, 2, 3, 4]
 
-Notez finalement que la liste vide s’écrit ``[]``.
-
+Notez finalement que la liste vide s’écrit ``[]`` et
+que Python fourni des outils pour manipuler les listes à volonté (voir :ref:`manips_listes`).
