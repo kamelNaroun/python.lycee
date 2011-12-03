@@ -129,52 +129,47 @@ représentent respectivement «vrai» et «faux» (comme en anglais en fait).
     >>> 0 > 1
     False
 
-La négation s’exprime avec ``not``.
+.. admonition:: Pour aller plus loin
 
-.. sourcecode:: python
+    La négation s’exprime avec ``not``.
 
-    >>> not True
-    False
-    >>> not False
-    True
-    >>> not 0 == 0
-    False
+    .. sourcecode:: python
 
-On peut combiner deux booléens entre eux avec les opérateurs ``and`` et
-``or``. Ce sont respectivement les opérateurs logiques «et» et «ou»
-(comme en anglais aussi). Ci-dessous nous demandons à Python d’écrire les
-tables de vérité de ces deux opérateurs.
+        >>> not True
+        False
+        >>> not False
+        True
+        >>> not 0 == 0
+        False
 
-.. sourcecode:: python
+    On peut combiner deux booléens entre eux avec les opérateurs ``and`` et
+    ``or``. Ce sont respectivement les opérateurs logiques «et» et «ou»
+    (comme en anglais aussi). Ci-dessous nous demandons à Python d’écrire les
+    tables de vérité de ces deux opérateurs.
 
-    >>> for a in [False, True]:
-    ...     for b in [False, True]:
-    ...         print(a, "and", b, "vaut", a and b)
-    ... 
-    False and False vaut False
-    False and True vaut False
-    True and False vaut False
-    True and True vaut True
+    .. sourcecode:: python
 
-.. sourcecode:: python
+        >>> for a in [False, True]:
+        ...     for b in [False, True]:
+        ...         print(a, "and", b, "vaut", a and b)
+        ... 
+        False and False vaut False
+        False and True vaut False
+        True and False vaut False
+        True and True vaut True
 
-<<<<<<< HEAD
-    >>> for a in [False, True]:
-    ...     for b in [False, True]:
-    ...         print(a, "or", b, "vaut", a or b)
-    ... 
-    False or False vaut False
-    False or True vaut True
-    True or False vaut True
-    True or True vaut True
+    .. sourcecode:: python
 
-Vous trouverez d’autres informations dans la documentation de Python au sujet
-des booléens et des opérateurs logiques.
-=======
-    if tri[2] <= tri[0] + tri[1]:
-        print("on peut construire le triangle")
-    else:      
-        print("on ne peut pas construire un tel triangle")
->>>>>>> index
+        >>> for a in [False, True]:
+        ...     for b in [False, True]:
+        ...         print(a, "or", b, "vaut", a or b)
+        ... 
+        False or False vaut False
+        False or True vaut True
+        True or False vaut True
+        True or True vaut True
 
-.. _booléens: http://fr.wikipedia.org/wiki/Bool%C3%A9en
+    Vous trouverez d’autres informations dans la documentation de Python au sujet
+    des booléens et des opérateurs logiques.
+
+    .. _booléens: http://fr.wikipedia.org/wiki/Bool%C3%A9en
