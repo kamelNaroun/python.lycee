@@ -69,6 +69,10 @@ La ligne 1 ne donne aucun affichage. Si la variable a n’existait pas, alors el
 On remarque au passage que, dans l’interpréteur interactif, taper juste ``var`` a le même effet que ``print(var)``.
 Ce n’est pas le cas dans l’éditeur où l’on a besoin de l’instruction ``print`` pour afficher un résultat.
 
+.. note::
+
+    Vous trouverez plus de tests dans la partie :ref:`tests`.
+
 Un dernier exemple :
 
 .. sourcecode:: python
