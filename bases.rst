@@ -27,7 +27,7 @@ Dans le tableau ci-après, sont présentés les symboles utilisés pour les opé
 
     Si vous n’utilisez pas une version 3 de Python, la division fera comme la division entière. Pour retrouver la «vraie» division, c’est-à-dire la division décimale, il faut importer un module comme le montre l’exemple suivant.
 
-.. index:: divsion
+.. index:: division
 
 .. sourcecode:: python
 
