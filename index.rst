@@ -11,7 +11,20 @@ Bienvenue sur ce tutoriel Python pour lycéens !
     :width: 300 px
     :align: left
    
-Depuis la rentrée 2009, l'**algorithmique** prend une place importante dans les programmes de mathématiques du lycée, en commençant par la classe de seconde. Si l'on s'en tient au programme, il n'est pas question de faire un cours d'informatique général. On ne doit faire que de l'algorithmique et un peu plus puisqu'il faut aussi faire tourner ces algorithmes sur machine. Pour ce faire, il faut au préalable transcrire ces algorithmes dans un langage de programmation. Il fallait en choisir un. J'ai choisi **Python** et propose dans ce document un tutoriel dont le but est d'accompagner les lycéens (seconde, première et terminale) dans l'apprentissage du langage python et par la même occasion dans la pratique de l'algorithmique.
+Depuis la rentrée 2009, l'**algorithmique** prend une place importante dans les
+programmes de mathématiques du lycée, en commençant par la classe de seconde.
+Si l'on s'en tient au programme, il n'est pas question de faire un cours
+d'informatique général. On ne doit faire que de l'algorithmique et un peu plus
+puisqu'il faut aussi faire tourner ces algorithmes sur machine. Pour ce faire,
+il faut au préalable transcrire ces algorithmes dans un langage de
+programmation. Il fallait en choisir un. J'ai choisi **Python** et propose dans
+ce document un tutoriel dont le but est d'accompagner les lycéens (seconde,
+première et terminale) dans l'apprentissage du langage python et par la même
+occasion dans la pratique de l'algorithmique.
+
+.. note::
+
+    Une `présentation rapide de Python`_ pour vous mettre en appétit.
 
 .. toctree::
    :maxdepth: 2
@@ -36,3 +49,4 @@ Depuis la rentrée 2009, l'**algorithmique** prend une place importante dans les
 
 
 .. _`ce lien`: http://python.lycee.free.fr/blog
+.. _`présentation rapide de Python`: http://python.lycee.free.fr/presentation-python/
