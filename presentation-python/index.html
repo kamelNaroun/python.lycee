@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Python pour l'algorithmique et ...</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="mydefault/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="mydefault/css/screen.css">
+    
+    
+      
+      <link rel="stylesheet" href="css/styles.css">
+      
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="mydefault/js/slides.js"></script>
+    
+    
+      
+      <script type="text/javascript" src="js/MathJax.js"></script>
+      
+    
+      
+      <script type="text/javascript" src="js/conf.js"></script>
+      
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div id="blank"></div>
+  <div class="presentation">
+    <div id="current_presenter_notes">
+      <div id="presenter_note"></div>
+    </div>
+    <div class="slides">
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Python pour l'algorithmique et ...</h1></header>
+            
+            
+            <section><p><img alt="" src="images/python-logo.png" /></p>
+<h1 align="right" style="font-size:50px"> ... pour les mathématiques </h1></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              1/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Historique</h1></header>
+            
+            
+            <section><p>Développé en 1989 par Guido van Rossum.
+<img alt="" src="images/gvr.jpg" />
+En 2005, il a été engagé par Google pour ne travailler que sur Python.</p>
+<p>Les deux versions récentes de Python :</p>
+<ul>
+<li>la 2.7</li>
+<li>la 3.2</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              2/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Caractéristiques</h1></header>
+            
+            
+            <section><ul>
+<li>
+<p>Libre et gratuit</p>
+</li>
+<li>
+<p>Interprété (pas besoin de compilation)</p>
+</li>
+<li>
+<p>peut être interactif (on peut s'en servir comme une calculatrice)</p>
+</li>
+<li>
+<p>Impératif / Fonctionnel / Orienté Objet</p>
+</li>
+<li>
+<p>Extensible (par exemple avec des modules graphiques)</p>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              3/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>The Zen of Python</h1></header>
+            
+            
+            <section><ul>
+<li>
+<p>Syntaxe claire et cohérente</p>
+</li>
+<li>
+<p>Indentation significative (lisibilité du code)</p>
+</li>
+<li>
+<p>Typage dynamique (pas de déclaration de variables)</p>
+</li>
+</ul>
+<p><img alt="" src="images/zen.jpg" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>The Zen of Python</h1></header>
+            
+            
+            <section><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">this</span>
+<span class="go">The Zen of Python, by Tim Peters</span>
+
+<span class="go">Beautiful is better than ugly.</span>
+<span class="go">Explicit is better than implicit.</span>
+<span class="go">Simple is better than complex.</span>
+<span class="go">Complex is better than complicated.</span>
+<span class="go">Flat is better than nested.</span>
+<span class="go">Sparse is better than dense.</span>
+<span class="go">Readability counts.</span>
+<span class="go">Special cases aren&#39;t special enough to break the rules.</span>
+<span class="go">Although practicality beats purity.</span>
+<span class="go">Errors should never pass silently.</span>
+<span class="go">Unless explicitly silenced.</span>
+<span class="go">In the face of ambiguity, refuse the temptation to guess.</span>
+<span class="go">There should be one-- and preferably only one --obvious way to do it.</span>
+<span class="go">Although that way may not be obvious at first unless you&#39;re Dutch.</span>
+<span class="go">Now is better than never.</span>
+<span class="go">Although never is often better than *right* now.</span>
+<span class="go">If the implementation is hard to explain, it&#39;s a bad idea.</span>
+<span class="go">If the implementation is easy to explain, it may be a good idea.</span>
+<span class="go">Namespaces are one honking great idea -- let&#39;s do more of those!</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Installation</h1></header>
+            
+            
+            <section><ul>
+<li>
+<p>Pour une installation sur le réseau informatique d'un établissement,
+mieux vaut laisser le responsable TICE s'en occuper.</p>
+</li>
+<li>
+<p>Pour une installation sur son propre ordinateur,
+plusieurs solutions possibles pour chaque système d'exploitation :</p>
+<ul>
+<li>avec GNU/Linux ou Mac, Python est souvent déjà installé</li>
+<li>avec Windows, par exemple installer <a href="http://amienspython.tuxfamily.org/">AmiensPython</a>.</li>
+</ul>
+</li>
+</ul>
+<p>Mais quelque soit le système d'exploitation, on peut l'utiliser dans un terminal
+ou avec <a href="http://docs.python.org/library/idle.html">IDLE</a></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Utilisation</h1></header>
+            
+            
+            <section><ul>
+<li>
+<p>Avec l'interpréteur : on s'en sert un peu comme une calculatrice.</p>
+</li>
+<li>
+<p>Avec l'éditeur : on écrit un programme dans n'importe quel éditeur de texte,
+puis on l'exécute à l'aide d'un terminal :</p>
+<div class="highlight"><pre><span class="nv">$ </span>python nom_du_fichier.py
+</pre></div>
+
+</li>
+</ul>
+<p><img alt="" src="images/idle.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Quelques rudiments</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              8/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Types et affectation</h1></header>
+            
+            
+            <section><ul>
+<li>entier (int)</li>
+<li>flottant (float)</li>
+<li>chaîne de caractères (string)</li>
+<li>liste (list)</li>
+<li>... (...)</li>
+</ul>
+<p>Pour affecter une valeur à une variable, on utilise le signe <code>=</code>.</p>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="s">&quot;une chaine&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Et pour l&#39;égalité ?</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">==</span> <span class="mi">9</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">==</span> <span class="mi">4</span>
+<span class="go">True</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Les opérations</h1></header>
+            
+            
+            <section><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="mi">12</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="mi">5</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">3</span><span class="o">**</span><span class="mi">2</span>
+<span class="go">9</span>
+</pre></div>
+
+<p>Cas particulier de la division</p>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="mi">5</span><span class="o">/</span><span class="mi">2</span>                                         <span class="c"># Ici avec Python 2.x</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">5</span><span class="o">/</span><span class="mi">2</span>
+<span class="go">2.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">5</span><span class="o">//</span><span class="mi">2</span>
+<span class="go">2</span>
+</pre></div>
+
+<p>C'est plus simple avec la dernière version.</p>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="mi">5</span><span class="o">/</span><span class="mi">2</span>                                         <span class="c"># Ici avec Python 3.x</span>
+<span class="go">2.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">5</span><span class="o">//</span><span class="mi">2</span>
+<span class="go">2</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              10/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Des fonctions prédéfinies</h1></header>
+            
+            
+            <section><ul>
+<li><code>print</code> et <code>input</code></li>
+<li><code>len</code>, <code>list</code> et <code>range</code></li>
+<li><code>complex</code> et <code>abs</code></li>
+<li><code>min</code> et <code>max</code></li>
+<li><code>round</code></li>
+<li><code>sum</code></li>
+</ul>
+<p>Du point de vue mathématique, ce serait très limité si on s'arrêtait là.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Plus de fonctions grâce aux modules</h1></header>
+            
+            
+            <section><p>On peut importer des modules supplémentaires.
+Cela permet de travailler avec plus de fonctions.</p>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">cos</span>
+</pre></div>
+
+<p>ou carrément</p>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</pre></div>
+
+<p>pour tout importer.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              12/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Quelques modules</h1></header>
+            
+            
+            <section><ul>
+<li>math (<code>pi</code>, <code>e</code>, <code>cos</code>, <code>sin</code>, <code>tan</code>, <code>exp</code>, ...)</li>
+<li>random (<code>choice</code>, <code>random</code>, <code>randint</code>, ...)</li>
+<li>numpy ( les mêmes que math plus tout ce qui tourne autour de <code>array</code> ... )</li>
+<li>matplotlib ( <code>plot</code>, ...)</li>
+<li>mpmath (<code>plot</code> aussi ...)</li>
+</ul>
+<p>Il y en a beaucoup d'autres.</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              13/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Exemples de graphiques avec Matplotlib</h1></header>
+            
+            
+            <section><p><img alt="" src="images/demo_plot1.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              14/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Un autre exemple de graphique avec Matplotlib</h1></header>
+            
+            
+            <section><p><img alt="" src="images/demo_plot2.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Encore un exemple de graphique avec Matplotlib</h1></header>
+            
+            
+            <section><p><img alt="" src="images/demo_plot3.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              16/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Un dernier pour la route</h1></header>
+            
+            
+            <section><p><img alt="" src="images/demo_plot4.png" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              17/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Un pas dans l'algorithmique</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              18/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Définition de fonction</h1></header>
+            
+            
+            <section><p>D'abord une fonction d'une seule variable :</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">3</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">5</span>
+    <span class="k">return</span> <span class="n">y</span>
+</pre></div>
+
+<p>Puis une fonction de deux variables:</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">y</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              19/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Un pas de plus vers l'algorithmique</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              20/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Tests</h1></header>
+            
+            
+            <section><div class="highlight"><pre><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;strictement positif&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&quot;négatif ou nul&quot;</span><span class="p">)</span>
+</pre></div>
+
+<p>Un test pour la définition d'une fonction affine par morceaux :</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="o">-</span><span class="n">x</span> <span class="o">+</span> <span class="mi">7</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              21/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Boucles <code>POUR</code></h1></header>
+            
+            
+            <section><p>Par exemple :</p>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="gp">... </span>   <span class="k">print</span><span class="p">(</span><span class="s">&quot;blabla&quot;</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">blabla</span>
+<span class="go">blabla</span>
+<span class="go">blabla</span>
+<span class="go">blabla</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
+<span class="go">[0, 1, 2 , 3]</span>
+</pre></div>
+
+<p>Ou encore :</p>
+<div class="highlight"><pre><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">14</span><span class="p">]:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="n">k</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">k</span><span class="p">)</span>
+</pre></div>
+
+<p>Ce qui est équivalent à :</p>
+<div class="highlight"><pre><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">k</span><span class="o">*</span><span class="n">k</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">k</span><span class="p">)</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              22/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Boucles <code>TANT_QUE</code></h1></header>
+            
+            
+            <section><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="gp">...</span>
+<span class="go">1</span>
+<span class="go">2</span>
+<span class="go">3</span>
+<span class="go">4</span>
+<span class="go">5</span>
+</pre></div>
+
+<p><img alt="" src="images/escher.jpg" /></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              23/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Des listes plutôt mathématiques</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              24/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Listes en compréhension</h1></header>
+            
+            
+            <section><p>Pour obtenir la liste des entiers naturels de la forme $5n + 3$ :</p>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">51</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">3</span><span class="p">]</span>
+<span class="go">[3, 8, 13, 18, 23, 28, 33, 38, 43, 48]</span>
+</pre></div>
+
+<p>La liste des valeurs d'une fonction $f$ défine sur $[0~;~5]$ par $f(x)=x^2+1$ :</p>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">abscisses</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ordonnees</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">points</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">abscisses</span><span class="p">,</span> <span class="n">ordonnees</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
+<span class="go">[(0, 1), (1, 2), (2, 5), (3, 10), (4, 17), (5, 26)]</span>
+</pre></div>
+
+<p>Pratique pour calculer certaines sommes :</p>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">sum</span><span class="p">([</span><span class="n">n</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)])</span>
+<span class="go">385</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              25/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Calcul numérique</h1></header>
+            
+            
+            <section><p>Attention, comme avec les calculatrices, les résultats sont approchées.</p>
+<div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># testons maintenant une égalité</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">==</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span>
+<span class="go">False</span>
+</pre></div>
+
+<p>Et pourtant $ (\sqrt{2})^2 + (\sqrt{3})^2 = (\sqrt{5})^2 $</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              26/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Peut-on faire du calcul formel avec Python ?</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              27/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Sympy et Sage</h1></header>
+            
+            
+            <section><p>Si vous voulez :</p>
+<ul>
+<li>développer ou factoriser des expressions,</li>
+<li>résoudre des équations ou systèmes d’équations,</li>
+<li>dériver des fonctions,</li>
+<li>calculer des intégrales,</li>
+<li>...</li>
+</ul>
+<p>et tout ceci de façon exacte, alors les deux solutions ci-dessous peuvent
+ répondre à vos besoins :</p>
+<ul>
+<li>
+<p><strong>Sympy</strong> est un module de Python.</p>
+</li>
+<li>
+<p><strong>Sage</strong> est un logiciel de calcul mathématique,
+qui fait entre autres du calcul formel
+et dont le langage est Python.</p>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              28/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: pres-python.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Quelques liens utiles</h1></header>
+            
+            
+            <section><ul>
+<li><a href="http://python.org/">http://python.org/</a></li>
+<li><a href="http://python.lycee.free.fr">http://python.lycee.free.fr</a></li>
+<li><a href="http://matplotlib.sourceforge.net/">http://matplotlib.sourceforge.net/</a></li>
+<li><a href="http://www.sagemath.org/fr/">http://www.sagemath.org/fr/</a></li>
+</ul>
+<p>.</p>
+<div class="highlight"><pre><span class="c">##########################################################################</span>
+<span class="c"># Présentation réalisée avec Landslide.                                  #</span>
+<span class="c">#                                                                        #</span>
+<span class="c">#                                                                        #</span>
+<span class="c">#                                             Kamel Naroun et M. Gragnic #</span>
+<span class="c">##########################################################################</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="pres-python.md">pres-python.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              29/29
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+      
+      <tr id="toc-row-1">
+        <th><a href="#slide1">Python pour l'algorithmique et ...</a></th>
+        <td><a href="#slide1">1</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-2">
+        <th><a href="#slide2">Historique</a></th>
+        <td><a href="#slide2">2</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide3">Caractéristiques</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-4">
+        <th><a href="#slide4">The Zen of Python</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-5">
+        <th><a href="#slide5">The Zen of Python</a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-6">
+        <th><a href="#slide6">Installation</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-7">
+        <th><a href="#slide7">Utilisation</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-8">
+        <th><a href="#slide8">Quelques rudiments</a></th>
+        <td><a href="#slide8">8</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-9">
+        <th><a href="#slide9">Types et affectation</a></th>
+        <td><a href="#slide9">9</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-10">
+        <th><a href="#slide10">Les opérations</a></th>
+        <td><a href="#slide10">10</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-11">
+        <th><a href="#slide11">Des fonctions prédéfinies</a></th>
+        <td><a href="#slide11">11</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-12">
+        <th><a href="#slide12">Plus de fonctions grâce aux modules</a></th>
+        <td><a href="#slide12">12</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-13">
+        <th><a href="#slide13">Quelques modules</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-14">
+        <th><a href="#slide14">Exemples de graphiques avec Matplotlib</a></th>
+        <td><a href="#slide14">14</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-15">
+        <th><a href="#slide15">Un autre exemple de graphique avec Matplotlib</a></th>
+        <td><a href="#slide15">15</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-16">
+        <th><a href="#slide16">Encore un exemple de graphique avec Matplotlib</a></th>
+        <td><a href="#slide16">16</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-17">
+        <th><a href="#slide17">Un dernier pour la route</a></th>
+        <td><a href="#slide17">17</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-18">
+        <th><a href="#slide18">Un pas dans l'algorithmique</a></th>
+        <td><a href="#slide18">18</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-19">
+        <th><a href="#slide19">Définition de fonction</a></th>
+        <td><a href="#slide19">19</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-20">
+        <th><a href="#slide20">Un pas de plus vers l'algorithmique</a></th>
+        <td><a href="#slide20">20</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-21">
+        <th><a href="#slide21">Tests</a></th>
+        <td><a href="#slide21">21</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-22">
+        <th><a href="#slide22">Boucles <code>POUR</code></a></th>
+        <td><a href="#slide22">22</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-23">
+        <th><a href="#slide23">Boucles <code>TANT_QUE</code></a></th>
+        <td><a href="#slide23">23</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-24">
+        <th><a href="#slide24">Des listes plutôt mathématiques</a></th>
+        <td><a href="#slide24">24</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-25">
+        <th><a href="#slide25">Listes en compréhension</a></th>
+        <td><a href="#slide25">25</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-26">
+        <th><a href="#slide26">Calcul numérique</a></th>
+        <td><a href="#slide26">26</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-27">
+        <th><a href="#slide27">Peut-on faire du calcul formel avec Python ?</a></th>
+        <td><a href="#slide27">27</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-28">
+        <th><a href="#slide28">Sympy et Sage</a></th>
+        <td><a href="#slide28">28</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-29">
+        <th><a href="#slide29">Quelques liens utiles</a></th>
+        <td><a href="#slide29">29</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Aide</h2>
+    <table>
+      <caption>Aide</caption>
+      <tr>
+        <th>Table des matières</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Exposé</th>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <th>Slides en plein écran</th>
+        <td>e</td>
+      </tr>
+      <tr>
+        <th>Presenter View</th>
+        <td>p</td>
+      </tr>
+      <tr>
+        <th>Fichier source</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Numéros de slide</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Montrer/cacher l'écran</th>
+        <td>b</td>
+      </tr>
+      <tr>
+        <th>Montrer/cacher le contexte</th>
+        <td>c</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Aide</th>
+        <td>h</td>
+      </tr>
+    </table>
+  </div>
+  <script>main()</script>
+</body>
+</html>

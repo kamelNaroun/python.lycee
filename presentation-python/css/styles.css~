@@ -1,0 +1,23 @@
+p.cop {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding: .2em 0;
+  color: #fff;
+  text-align: center;
+  color: #fff;
+  background: #225B8B;
+}
+
+p.cop strong {
+  color: ##092d1f;
+}
+
+p.cop a {
+  color: #ffe971;
+}
+
+div.slide.droite img {
+	text-align: right;
+}
