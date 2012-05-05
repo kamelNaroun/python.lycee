@@ -88,6 +88,34 @@ Il faut bien faire attention à ne pas confondre l’égalité mathématique `C 
 
     C_{\rm{nouveau}}=C_{\rm{ancien}}+1
 
+.. admonition:: Pour aller plus loin
+
+    Python permet les affectations multiples:
+
+    >>> x = y = 42
+    >>> x
+    42
+    >>> y
+    42
+
+    Avec la notion de tuple ou de liste, Python permet aussi les affectations
+    parallèles:
+
+    >>> x, y = (1, 2)  # mais aussi...
+    >>> x, y = [1, 2]
+    >>> (x,y) = (1,2)
+    >>> x, y = 1, 2    # donnent:
+    >>> x
+    1
+    >>> y
+    2
+    >>> r, v, b = image.getpixel((x, y))
+    >>> r, v, b
+    (255, 0, 0)
+
+    Pratique pour les coordonnées ou pour les triplets RVB (synthèse additive
+    de couleurs), il ne faut cependant pas en abuser.
+
 
 Chaînes de caractères
 =====================
@@ -146,6 +174,7 @@ qui sait gérer différents types de paramètres pour les afficher sur une même
 
 Notez finalement que la chaîne de caractères vide s’écrit ``""`` ou ``''`` et
 que Python fourni des outils pour manipuler les chaînes à volonté (voir :ref:`manips_chaines`).
+
 
 Listes
 ======
