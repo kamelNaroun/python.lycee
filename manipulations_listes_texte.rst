@@ -31,10 +31,10 @@ Manipulation de listes
     >>> maliste.count("un")     # on demande le nombre d'apparitions de l'élément "un"
     1
 
+.. _manips_texte:
+
 Manipulation de texte
 =====================
-
-.. _manips_texte:
 
 .. note::
 

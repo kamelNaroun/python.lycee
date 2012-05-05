@@ -173,7 +173,7 @@ qui sait gérer différents types de paramètres pour les afficher sur une même
     Pour plus d’informations sur ce formatage, voir la documentation de ``print``.
 
 Notez finalement que la chaîne de caractères vide s’écrit ``""`` ou ``''`` et
-que Python fourni des outils pour manipuler les chaînes à volonté (voir :ref:`manips_chaines`).
+que Python fourni des outils pour manipuler le texte à volonté (voir :ref:`manips_texte`).
 
 
 Listes
