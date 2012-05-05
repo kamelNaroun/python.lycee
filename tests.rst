@@ -80,27 +80,39 @@ Python permet de plus l’enchaînement des comparaisons.
 En mathématiques, il n’est pas rare que l’on ait à écrire
 :math:`3 \leq x \leq 7` pour dire que x appartient à l’intervalle
 :math:`[3;7]`. En Python, cela peut être fait grâce au connecteur ``and``
-(voir la section :ref:`booleens`), mais c’est bien plus lisible avec
-la double inégalité, et chaque expression n’est évaluée qu’une fois.
+(voir la section :ref:`booleens`), comme dans les autres langages.
 
 .. sourcecode:: python
 
-    >>> for x in range(10):
-    ...     if 3 <= x <= 7:
+    >>> for x in range(5):
+    ...     if 3 <= 2*x and 2*x <= 7:  # long et peu lisible
     ...         print(x, "est dans l'intervalle")
     ...     else:
     ...         print(x, "n'est pas dans l'intervalle")
-    ... 
+    ...
     (0, "n'est pas dans l'intervalle")
     (1, "n'est pas dans l'intervalle")
-    (2, "n'est pas dans l'intervalle")
+    (2, "est dans l'intervalle")
     (3, "est dans l'intervalle")
-    (4, "est dans l'intervalle")
-    (5, "est dans l'intervalle")
-    (6, "est dans l'intervalle")
-    (7, "est dans l'intervalle")
-    (8, "n'est pas dans l'intervalle")
-    (9, "n'est pas dans l'intervalle")
+    (4, "n'est pas dans l'intervalle")
+
+
+Mais c’est bien plus lisible avec la double inégalité,
+et chaque expression (ici :math:`2x`) n’est évaluée qu’une fois.
+
+.. sourcecode:: python
+
+    >>> for x in range(5):
+    ...     if 3 <= 2*x <= 7:  # plus concis et plus lisible
+    ...         print(x, "est dans l'intervalle")
+    ...     else:
+    ...         print(x, "n'est pas dans l'intervalle")
+    ...
+    (0, "n'est pas dans l'intervalle")
+    (1, "n'est pas dans l'intervalle")
+    (2, "est dans l'intervalle")
+    (3, "est dans l'intervalle")
+    (4, "n'est pas dans l'intervalle")
 
 
 .. _booleens:
