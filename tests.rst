@@ -184,4 +184,4 @@ représentent respectivement «vrai» et «faux» (comme en anglais en fait).
     Vous trouverez d’autres informations dans la documentation de Python au sujet
     des booléens et des opérateurs logiques.
 
-    .. _booléens: http://fr.wikipedia.org/wiki/Bool%C3%A9en
+.. _booléens: http://fr.wikipedia.org/wiki/Bool%C3%A9en
