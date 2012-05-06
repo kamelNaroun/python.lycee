@@ -80,27 +80,39 @@ Python permet de plus l’enchaînement des comparaisons.
 En mathématiques, il n’est pas rare que l’on ait à écrire
 :math:`3 \leq x \leq 7` pour dire que x appartient à l’intervalle
 :math:`[3;7]`. En Python, cela peut être fait grâce au connecteur ``and``
-(voir la section :ref:`booleens`), mais c’est bien plus lisible avec
-la double inégalité, et chaque expression n’est évaluée qu’une fois.
+(voir la section :ref:`booleens`), comme dans les autres langages.
 
 .. sourcecode:: python
 
-    >>> for x in range(10):
-    ...     if 3 <= x <= 7:
+    >>> for x in range(5):
+    ...     if 3 <= 2*x and 2*x <= 7:  # long et peu lisible
     ...         print(x, "est dans l'intervalle")
     ...     else:
     ...         print(x, "n'est pas dans l'intervalle")
-    ... 
+    ...
     (0, "n'est pas dans l'intervalle")
     (1, "n'est pas dans l'intervalle")
-    (2, "n'est pas dans l'intervalle")
+    (2, "est dans l'intervalle")
     (3, "est dans l'intervalle")
-    (4, "est dans l'intervalle")
-    (5, "est dans l'intervalle")
-    (6, "est dans l'intervalle")
-    (7, "est dans l'intervalle")
-    (8, "n'est pas dans l'intervalle")
-    (9, "n'est pas dans l'intervalle")
+    (4, "n'est pas dans l'intervalle")
+
+
+Mais c’est bien plus lisible avec la double inégalité,
+et chaque expression (ici :math:`2x`) n’est évaluée qu’une fois.
+
+.. sourcecode:: python
+
+    >>> for x in range(5):
+    ...     if 3 <= 2*x <= 7:  # plus concis et plus lisible
+    ...         print(x, "est dans l'intervalle")
+    ...     else:
+    ...         print(x, "n'est pas dans l'intervalle")
+    ...
+    (0, "n'est pas dans l'intervalle")
+    (1, "n'est pas dans l'intervalle")
+    (2, "est dans l'intervalle")
+    (3, "est dans l'intervalle")
+    (4, "n'est pas dans l'intervalle")
 
 
 .. _booleens:
@@ -129,45 +141,47 @@ représentent respectivement «vrai» et «faux» (comme en anglais en fait).
     >>> 0 > 1
     False
 
-La négation s’exprime avec ``not``.
+.. admonition:: Pour aller plus loin
 
-.. sourcecode:: python
+    La négation s’exprime avec ``not``.
 
-    >>> not True
-    False
-    >>> not False
-    True
-    >>> not 0 == 0
-    False
+    .. sourcecode:: python
 
-On peut combiner deux booléens entre eux avec les opérateurs ``and`` et
-``or``. Ce sont respectivement les opérateurs logiques «et» et «ou»
-(comme en anglais aussi). Ci-dessous nous demandons à Python d’écrire les
-tables de vérité de ces deux opérateurs.
+        >>> not True
+        False
+        >>> not False
+        True
+        >>> not 0 == 0
+        False
 
-.. sourcecode:: python
+    On peut combiner deux booléens entre eux avec les opérateurs ``and`` et
+    ``or``. Ce sont respectivement les opérateurs logiques «et» et «ou»
+    (comme en anglais aussi). Ci-dessous nous demandons à Python d’écrire les
+    tables de vérité de ces deux opérateurs.
 
-    >>> for a in [False, True]:
-    ...     for b in [False, True]:
-    ...         print(a, "and", b, "vaut", a and b)
-    ... 
-    False and False vaut False
-    False and True vaut False
-    True and False vaut False
-    True and True vaut True
+    .. sourcecode:: python
 
-.. sourcecode:: python
+        >>> for a in [False, True]:
+        ...     for b in [False, True]:
+        ...         print(a, "and", b, "vaut", a and b)
+        ... 
+        False and False vaut False
+        False and True vaut False
+        True and False vaut False
+        True and True vaut True
 
-    >>> for a in [False, True]:
-    ...     for b in [False, True]:
-    ...         print(a, "or", b, "vaut", a or b)
-    ... 
-    False or False vaut False
-    False or True vaut True
-    True or False vaut True
-    True or True vaut True
+    .. sourcecode:: python
 
-Vous trouverez d’autres informations dans la documentation de Python au sujet
-des booléens et des opérateurs logiques.
+        >>> for a in [False, True]:
+        ...     for b in [False, True]:
+        ...         print(a, "or", b, "vaut", a or b)
+        ... 
+        False or False vaut False
+        False or True vaut True
+        True or False vaut True
+        True or True vaut True
+
+    Vous trouverez d’autres informations dans la documentation de Python au sujet
+    des booléens et des opérateurs logiques.
 
 .. _booléens: http://fr.wikipedia.org/wiki/Bool%C3%A9en

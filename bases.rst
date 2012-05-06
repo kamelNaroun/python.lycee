@@ -44,8 +44,8 @@ Pour toute la suite, je suppose que la division est décimale.
 Affectations et égalité
 =======================
 
-Une affectation se fait en utilisant le signe =. Tester si une égalité est vraie
-ou fausse se fait en utilisant ==. Regardons l’exemple suivant.
+Une affectation se fait en utilisant le signe ``=``. Tester si une égalité est vraie
+ou fausse se fait en utilisant ``==``. Regardons l’exemple suivant.
 
 .. sourcecode:: python
    :linenos:
@@ -69,6 +69,10 @@ La ligne 1 ne donne aucun affichage. Si la variable a n’existait pas, alors el
 On remarque au passage que, dans l’interpréteur interactif, taper juste ``var`` a le même effet que ``print(var)``.
 Ce n’est pas le cas dans l’éditeur où l’on a besoin de l’instruction ``print`` pour afficher un résultat.
 
+.. note::
+
+    Vous trouverez plus de tests dans la partie :ref:`tests`.
+
 Un dernier exemple :
 
 .. sourcecode:: python
@@ -83,6 +87,34 @@ Il faut bien faire attention à ne pas confondre l’égalité mathématique `C 
 .. math::
 
     C_{\rm{nouveau}}=C_{\rm{ancien}}+1
+
+.. admonition:: Pour aller plus loin
+
+    Python permet les affectations multiples:
+
+    >>> x = y = 42
+    >>> x
+    42
+    >>> y
+    42
+
+    Avec la notion de tuple ou de liste, Python permet aussi les affectations
+    parallèles:
+
+    >>> x, y = (1, 2)  # mais aussi...
+    >>> x, y = [1, 2]
+    >>> (x,y) = (1,2)
+    >>> x, y = 1, 2    # donnent:
+    >>> x
+    1
+    >>> y
+    2
+    >>> r, v, b = image.getpixel((x, y))
+    >>> r, v, b
+    (255, 0, 0)
+
+    Pratique pour les coordonnées ou pour les triplets RVB (synthèse additive
+    de couleurs), il ne faut cependant pas en abuser.
 
 
 Chaînes de caractères
@@ -128,17 +160,21 @@ qui sait gérer différents types de paramètres pour les afficher sur une même
    >>> print("le carré de ", a, " est ", a**2)
    le carré de 9 est 81
 
-On peut aussi utiliser (mais pour une première lecture, il vaut mieux s’arrêter là) les possibilités de formatage de la fonction ``print`` comme ci-dessous.
+.. admonition:: Pour aller plus loin
 
-.. sourcecode:: python
+    On peut aussi utiliser (mais pour une première lecture, il vaut mieux s’arrêter là) les possibilités de formatage de la fonction ``print`` comme ci-dessous.
 
-   >>> a = 9
-   >>> print("le carré de %i est %i" %(a, a**2))
-   le carré de 9 est 81
+    .. sourcecode:: python
 
-Pour plus d’informations sur ce formatage, voir en annexe.
+       >>> a = 9
+       >>> print("le carré de %i est %i" %(a, a**2))
+       le carré de 9 est 81
 
-Notez finalement que la chaîne de caractères vide s’écrit ``""`` ou ``''``.
+    Pour plus d’informations sur ce formatage, voir la documentation de ``print``.
+
+Notez finalement que la chaîne de caractères vide s’écrit ``""`` ou ``''`` et
+que Python fourni des outils pour manipuler le texte à volonté (voir :ref:`manips_texte`).
+
 
 Listes
 ======
@@ -222,5 +258,5 @@ départ est automatiquement 0.
    >>> x
    [0, 1, 2, 3, 4]
 
-Notez finalement que la liste vide s’écrit ``[]``.
-
+Notez finalement que la liste vide s’écrit ``[]`` et
+que Python fourni des outils pour manipuler les listes à volonté (voir :ref:`manips_listes`).
