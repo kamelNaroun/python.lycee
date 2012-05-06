@@ -6,6 +6,8 @@
 Manipulation basique de listes et de texte
 ******************************************
 
+.. _manips_listes:
+
 Manipulation de listes
 ======================
 
@@ -28,6 +30,8 @@ Manipulation de listes
     1
     >>> maliste.count("un")     # on demande le nombre d'apparitions de l'élément "un"
     1
+
+.. _manips_texte:
 
 Manipulation de texte
 =====================
