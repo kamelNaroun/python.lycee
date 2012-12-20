@@ -28,6 +28,12 @@ Le principe de la boucle ``while``, c'est d'exécuter un bloc d'instructions tan
 
 Ici tant que (while) la condition :math:`(i\leq5)` est vraie, le bloc d'instructions (il y en a deux dans notre cas) est executé.
 
+Regardons ce code pas à pas pour bien comprendre ce qu'il se passe.
+
+.. raw:: html
+
+    <div id="boucleDiv"></div>
+
 .. attention::
 
     La deuxième instruction est primordiale car elle assure que l'on va sortir de la boucle. En effet, avec ce genre de boucle, il faut faire attention à ne pas construire une **boucle sans fin**.
