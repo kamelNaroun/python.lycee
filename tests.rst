@@ -18,23 +18,31 @@ Commençons par regarder le script ci-dessous :
 .. sourcecode:: python
 
     print("Entrer un nombre plus petit que 100.")
-    nb = input()
+    nb = float(input())
     
     if nb < 100:
         print("Ce nombre convient.")
     else:
         print("Ce nombre est trop grand.")
 
-A l'exécution du script, l'ordinateur va afficher la chaîne "Entrer un nombre plus petit que 100." et va marquer un temps d'arrêt. En effet, la commande ``input()`` attend ici que l'on rentre un nombre puis que l'on appuie sur la touche Entrée. Ce nombre sera alors affecté à la variable ``nb``.
+A l'exécution du script, l'ordinateur va afficher la chaîne
+"Entrer un nombre plus petit que 100." et va marquer un temps d'arrêt. En effet,
+la commande ``input()`` attend ici que l'on rentre un nombre et que l'on
+appuie sur la touche Entrée. Mais ce nombre est d'abord saisi en tant que chaine
+de caractères, puis converti en nombre (flottant) grâce à la fonction ``float``.
+Ce nombre sera alors affecté à la variable ``nb``.
 
 Puis le test commence :
 
-    - si (IF en anglais) la condition (``nb < 100``) est vraie, alors le bloc d'instructions qui suit (ici une seule instruction) est executé,
-    - sinon (ELSE en anglais), c'est-à-dire si la condition (``nb < 100``) est fausse, alors c'est l'autre bloc d'instructions qui est executé.
+    - si (IF en anglais) la condition (``nb < 100``) est vraie, alors le bloc
+    d'instructions qui suit (ici une seule instruction) est executé,
+    - sinon (ELSE en anglais), c'est-à-dire si la condition (``nb < 100``) est
+    fausse, alors c'est l'autre bloc d'instructions qui est executé.
 
 .. note::
 
-    Ici les deux blocs d'instructions ne sont composés que d'une seule instruction.
+    Ici les deux blocs d'instructions ne sont composés que d'une seule
+    instruction.
 
 Le couple ``if`` et ``else`` agit finalement comme un aiguillage. Attention
 cependant, l’instruction ``else`` et son bloc sont parfois omis. Dans ce cas,
@@ -44,7 +52,10 @@ si la condition est fausse, rien n’est exécuté.
 
 .. attention::
 
-    Avec Python3, la fonction ``input()`` renvoie systématiquement une chaîne de caractères. Donc si c'est un nombre que l'on veut manipuler, il faudra utiliser la fonction ``int()`` s'il s'agit d'un entier ou ``float()`` s'il s'agit d'un décimal. Donc avec Python3, au dessus, il faut remplacer l'instruction ``nb = input()`` par
+    Avec Python3, la fonction ``input()`` renvoie systématiquement une chaîne
+    de caractères. Donc si c'est un nombre que l'on veut manipuler, il faudra
+    utiliser la fonction ``int()`` s'il s'agit d'un entier ou ``float()`` s'il
+    s'agit d'un décimal. Par exemple :
     
     .. sourcecode:: python
     

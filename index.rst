@@ -26,6 +26,10 @@ occasion dans la pratique de l'algorithmique.
 
     Une `présentation rapide de Python`_ pour vous mettre en appétit.
 
+.. attention::
+
+    Depuis juin 2013, c'est la version 3 de Python qui est présentée sur ce site.
+
 .. toctree::
    :maxdepth: 2
 

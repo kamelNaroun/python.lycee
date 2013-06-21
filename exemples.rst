@@ -9,9 +9,12 @@ Exemples
 Tableau de valeurs
 ==================
 
-On peut facilement obtenir le tableau de valeur d'une fonction sur un intervalle borné avec un certain pas.
+On peut facilement obtenir le tableau de valeur d'une fonction sur un intervalle
+borné avec un certain pas.
 
-Considérons la fonction :math:`g` définie par :math:`g(x)=\sqrt{x^4+1}`. Si l'on souhaite obtenir les valeurs prises par la fonction sur l'intervalle :math:`[2;3]` avec un pas de :math:`0,1` , voici ce que l'on peut faire :
+Considérons la fonction :math:`g` définie par :math:`g(x)=\sqrt{x^4+1}`. Si
+l'on souhaite obtenir les valeurs prises par la fonction sur l'intervalle
+:math:`[2;3]` avec un pas de :math:`0,1` , voici ce que l'on peut faire :
 
 .. sourcecode:: python
     
@@ -41,7 +44,9 @@ En exécutant ce script, voici ce que l'on obtient
     g( 2.9 ) = 8.46924435826
     g( 3.0 ) = 9.05538513814
 
-On peut ne pas trouver très beau les espaces après et avant les parenthèses, puis vouloir que les arrondis à :math:`10^{-2}` près. Pour cela, il suffit d'utiliser les possibilités de formatage de la fonction print comme cela.
+On peut ne pas trouver très beau les espaces après et avant les parenthèses,
+puis vouloir que les arrondis à :math:`10^{-2}` près. Pour cela, il suffit
+d'utiliser les possibilités de formatage de la fonction print comme cela.
 
 .. sourcecode:: python
 
@@ -52,7 +57,7 @@ On peut ne pas trouver très beau les espaces après et avant les parenthèses, 
 
     x = 2
     while x < 3.1:
-        print("g(%0.1f) = %0.2f" %(x, g(x)))
+        print("g({:0.1f}) = {:0.2f}".format(x, g(x)))
         x = x + 0.1
 
 Et on obtient : 
@@ -71,7 +76,9 @@ Et on obtient :
     g(2.9) = 8.47
     g(3.0) = 9.06
 
-Evidemment dans les deux cas, le signe = est affiché, mais il s'agit bien entendu d'une approximation. On peut signaler au passage l'existence de la fonction ``round()`` qui donne l'arrondi à la précision demandée
+Evidemment dans les deux cas, le signe = est affiché, mais il s'agit bien
+entendu d'une approximation. On peut signaler au passage l'existence de la
+fonction ``round()`` qui donne l'arrondi à la précision demandée
 
 .. sourcecode:: python
 
@@ -86,7 +93,10 @@ Evidemment dans les deux cas, le signe = est affiché, mais il s'agit bien enten
 Intervalle de fluctuation
 =========================
 
-On peut demander d'écrire un programme qui permet de déterminer l'intervalle de fluctuation au seuil de 95% à partir d'une liste de valeurs, connaissant évidemment le centre de l'intervalle. Voici une proposition avec une précision de l'ordre du millième.
+On peut demander d'écrire un programme qui permet de déterminer l'intervalle de
+fluctuation au seuil de 95% à partir d'une liste de valeurs, connaissant
+évidemment le centre de l'intervalle. Voici une proposition avec une précision
+de l'ordre du millième.
 
 .. sourcecode:: python
 
@@ -125,7 +135,9 @@ On peut demander d'écrire un programme qui permet de déterminer l'intervalle d
 Un jeu de dé
 ============
 
-On lance un dé. Si le numéro est 1, 5 ou 6, alors c'est gagné, sinon c'est perdu. Ecrire un programme simulant ce jeu d'abord sans utiliser de liste puis en utilisant une liste. Voici une première proposition :
+On lance un dé. Si le numéro est 1, 5 ou 6, alors c'est gagné, sinon c'est
+perdu. Ecrire un programme simulant ce jeu d'abord sans utiliser de liste puis
+en utilisant une liste. Voici une première proposition :
 
 .. sourcecode:: python
 
@@ -182,5 +194,4 @@ Et maintenant en utilisant une liste, on peut faire encore plus simple :
         print("gagné")
     else:
         print("perdu")
-
 
