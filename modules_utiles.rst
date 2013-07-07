@@ -11,10 +11,10 @@ D'abord, qu'est-ce qu'un module ? Il s'agit d'une sorte de bibliothèque
 d'accéder à de nouvelles fonctions.
 Il en existe beaucoup. On peut citer :
 
-- le module turtle qui permet de réaliser des dessins géométriques,
-- le module numpy qui permet de faire du calcul scientifique,
-- le module sympy qui permet de faire du calcul formel.
-- le module matplotlib qui permet de faire des graphiques en tout genre.
+- le module `turtle`_ qui permet de réaliser des dessins géométriques,
+- le module `numpy`_ qui permet de faire du calcul scientifique,
+- le module `sympy`_ qui permet de faire du calcul formel.
+- le module `matplotlib`_ qui permet de faire des graphiques en tout genre. Pour ceux que cela interesse, il existe ce petit tutoriel pour `débuter avec matplotlib`_ .
 
 Il y en a beaucoup d'autres et parmi eux, j'ai choisi de présenter les deux qui
 en classe de seconde au moins me semblent le plus utile.
@@ -79,3 +79,60 @@ utile dans un premier temps sont :
     >>> choice(liste)
     'Jacques'
 
+.. admonition:: Pour aller plus loin
+
+    Il y a différents type de modules :
+
+    - ceux qui sont inclus dans la version de Python comme *random* ou *math*,
+    - ceux que l'on peut rajouter comme *numpy* ou *matplotlib*,
+    - et ceux que l'on peut faire soi-même (il s'agit dans les cas simples d'un fichier Python contenant un ensemble de fonctions).
+
+    Mais pour importer un module, la façon de procéder reste la même, ou plutôt
+    les mêmes car il y a deux façons de faire. Voyons cela en prenant comme
+    exemple le module *math*.
+
+        >>> from math import sqrt
+        >>> sqrt(36)
+        6.0
+        >>> cos(0)
+        Traceback (most recent call last):
+          File "<stdin>", line 1, in <module>
+        NameError: name 'cos' is not defined
+
+
+    Le message d'erreur signifie simplement que l'on n'a pas importé la fonction ``cos``.
+    Donc si on recommence
+
+        >>> from math import sqrt, cos
+        >>> sqrt(36)
+        6.0
+        >>> cos(0)
+        1.0
+
+    Et si on veut que toutes les fonctions du module soient importées, on peut
+    procéder comme on l'a fait plus haut en utilisant l'étoile `*`.
+
+        >>> from math import *
+        >>> sqrt(36)
+        6.0
+        >>> cos(0)
+        1.0
+
+    C'était la première façon de faire. Voici la deuxième façon de faire pour
+    importer un module.
+
+        >>> import math
+        >>> math.sqrt(36)
+        6.0
+        >>> math.cos(0)
+        1.0
+
+    Bien que cette deuxième méthode paraisse plus lourde à écrire, elle peut
+    avoir certains avantages.
+
+
+.. _turtle: http://docs.python.org/2/library/turtle.html
+.. _numpy: http://www.numpy.org/
+.. _sympy: http://sympy.org
+.. _matplotlib: http://matplotlib.org/
+.. _débuter avec matplotlib: http://matplotlib.free.fr
