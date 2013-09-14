@@ -13,11 +13,15 @@ Il en existe beaucoup. On peut citer :
 
 - le module `turtle`_ qui permet de réaliser des dessins géométriques,
 - le module `numpy`_ qui permet de faire du calcul scientifique,
-- le module `sympy`_ qui permet de faire du calcul formel.
+- le module `sympy`_ qui permet de faire du calcul formel,
 - le module `matplotlib`_ qui permet de faire des graphiques en tout genre. Pour ceux que cela interesse, il existe ce petit tutoriel pour `débuter avec matplotlib`_ .
 
-Il y en a beaucoup d'autres et parmi eux, j'ai choisi de présenter les deux qui
-en classe de seconde au moins me semblent le plus utile.
+Il y en a beaucoup d’autres, tant dans la nature
+(https://github.com/search?q=python+module) que dans la bibliothèque
+standard (http://docs.python.org/3/py-modindex.html), voire des
+modules que vous aurez codés vous-mêmes. Parmi ces derniers, j’ai
+choisi de présenter les deux qui, en classe de seconde au moins, me
+semblent les plus utiles: `math` et `random`.
 
 Le module math
 ==============
@@ -81,14 +85,14 @@ utile dans un premier temps sont :
 
 .. admonition:: Pour aller plus loin
 
-    Il y a différents type de modules :
+    Comme dit plus haut, il y a différents types de modules :
 
     - ceux qui sont inclus dans la version de Python comme *random* ou *math*,
     - ceux que l'on peut rajouter comme *numpy* ou *matplotlib*,
     - et ceux que l'on peut faire soi-même (il s'agit dans les cas simples d'un fichier Python contenant un ensemble de fonctions).
 
-    Mais pour importer un module, la façon de procéder reste la même, ou plutôt
-    les mêmes car il y a deux façons de faire. Voyons cela en prenant comme
+    Mais **pour importer un module**, la façon de procéder reste la même, ou plutôt
+    les mêmes car il y a **deux façons de faire**. Voyons cela en prenant comme
     exemple le module *math*.
 
         >>> from math import sqrt

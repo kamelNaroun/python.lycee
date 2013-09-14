@@ -34,10 +34,8 @@ Ce nombre sera alors affecté à la variable ``nb``.
 
 Puis le test commence :
 
-    - si (IF en anglais) la condition (``nb < 100``) est vraie, alors le bloc
-    d'instructions qui suit (ici une seule instruction) est executé,
-    - sinon (ELSE en anglais), c'est-à-dire si la condition (``nb < 100``) est
-    fausse, alors c'est l'autre bloc d'instructions qui est executé.
+- si (IF en anglais) la condition (``nb < 100``) est vraie, alors le bloc d'instructions qui suit (ici une seule instruction) est executé,
+- sinon (ELSE en anglais), c'est-à-dire si la condition (``nb < 100``) est fausse, alors c'est l'autre bloc d'instructions qui est executé.
 
 .. note::
 
