@@ -43,6 +43,7 @@ occasion dans la pratique de l'algorithmique.
    list_comprehensions.rst
    modules_utiles.rst
    exemples.rst
+   liste-plus.rst
    manipulations_listes_texte.rst
    annexes.rst
    remerciements.rst
